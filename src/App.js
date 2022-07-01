@@ -1,16 +1,12 @@
-import Mfahiz from './Mfahiz_photo.jpg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={Mfahiz} className="App-logo" alt="logo" />
-       
-      <h2>Hai,I'm Muhammed Fahiz</h2>
-        
-       
-      </header>
+      <Navbar />
+      <Home />
     </div>
   );
 }
