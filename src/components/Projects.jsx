@@ -47,7 +47,7 @@ const Projects = () => {
       {id:2,skill:'CSS3',img:<SiCss3 size='20px' color='blue' />},
       {id:3,skill:'JavaScript',img:<SiJavascript size='20px' color='orange' />},],
       description:
-        "IndiaMART is an Indian e-commerce company that provides B2B and customer to customer sales services via its web portal,this is the clone of home page of Blueheaven cosmetics in IndiaMart, this is a collaborative project, developed along with other 3 team members ",
+        "IndiaMART is an Indian e-commerce company that provides B2B and customer to customer sales services via its web portal. ",
       features: [],
       images: IndiaMart,
       gif: "",
@@ -56,11 +56,21 @@ const Projects = () => {
   ];
 
   return (
-    <Container maxW="80%" >
+    <Container maxW="90%"  margin='auto'padding='0px'  marginTop='50px'>
       <Heading margin='20px'>My Projects</Heading>
+    <Container maxW="100%"  display='grid'
+      gridTemplateColumns={[
+        "repeat(1,1fr)",
+        "repeat(1,1fr)",
+        "repeat(2,1fr)",
+        "repeat(3,1fr)",
+        "repeat(3,1fr)",
+    ]}
+      gap='20px' margin='auto' p='0px' marginTop='50px'>
       {projects.map((project) => {
         return <ProjectCard key={project.id} {...project} />;
       })}
+    </Container>
     </Container>
   );
 };

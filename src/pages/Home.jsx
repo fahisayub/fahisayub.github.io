@@ -7,12 +7,12 @@ import Contacts from "../components/Contacts";
 import { Container } from '@chakra-ui/react';
 const Home = () => {
     return (
-        <Container maxW='100%' >
+        <Container maxW={['100%', '100%','100%','70%','70%']}   margin='auto'  padding='10px' >
+            
       <Intro/>
        <AboutMe/>
        <Skills/>
        <Projects/>
-       <Contacts/>
         </Container>
     );
 };
