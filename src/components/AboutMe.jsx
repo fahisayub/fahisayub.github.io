@@ -6,6 +6,7 @@ import { MdPhone, MdEmail } from "react-icons/md";
 const AboutMe = () => {
   return (
     <Container
+      id='aboutme'
       maxW="90%"
       padding="20px"
       borderRadius="20px"

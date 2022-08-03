@@ -7,6 +7,7 @@ import SocialButtons from "./SocialButtons";
 const Intro = () => {
   return (
     <Container
+      id='intro'
       margin="auto"
       display={["block", "block", "flex", "flex", "flex"]}
       marginTop='100px'
@@ -38,6 +39,7 @@ const Intro = () => {
         <Button
         margin='auto'
           as="a"
+          target='_blank'
           bgGradient="linear(to-l, #7928CA, #FF0080)"
           color="white"
           href="https://drive.google.com/file/d/1N6vSNzfhRjmvvcA-aYGj5qGoF8bW0erx/view?usp=sharing"

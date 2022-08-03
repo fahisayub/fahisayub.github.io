@@ -1,6 +1,6 @@
 import React from "react";
-import { Container,Box } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Container,Box, Heading,Link } from "@chakra-ui/react";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -17,14 +17,14 @@ const Navbar = () => {
         color="white"
         
       >
-        <Box>MFahiz</Box>
+        <Box as={ScrollLink} to="intro"spy={true} smooth={true}offset={-80} duration={500}><Heading marginTop={0} fontFamily='cursive' size='lg'>MFahiz</Heading></Box>
         <Box display="flex" w='50%' 
         justifyContent="space-evenly" >
 
-        <Link to="/">About Me</Link>
-        <Link to="/">Skills</Link>
-        <Link to="/">Projects</Link>
-        <Link to="/">Contact</Link>
+        <Link as={ScrollLink}  to="aboutme"spy={true} smooth={true}offset={-80} duration={500} cursor='pointer'>About Me</Link>
+        <Link as={ScrollLink} to="skills"spy={true} smooth={true}offset={-80} duration={500}>Skills</Link>
+        <Link as={ScrollLink} to="projects"spy={true} smooth={true}offset={-80} duration={500}>Projects</Link>
+        <Link as={ScrollLink} to="contact"spy={true} smooth={true}offset={-80} duration={500}>Contact</Link>
         </Box>
       </Container>
   );
