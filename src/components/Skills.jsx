@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Heading,Box } from "@chakra-ui/react";
+import { Container, Heading,Box, Icon} from "@chakra-ui/react";
 import SkillBox from "./SkillBox";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaNodeJs } from "react-icons/fa";
@@ -7,7 +7,6 @@ import { DiMysql } from "react-icons/di";
 import { FcCommandLine } from "react-icons/fc";
 import {
   SiGithub,
-  SiEagle,
   SiAnsys,
   SiAdobeillustrator,
   SiInkscape,
@@ -23,6 +22,11 @@ import {
   SiCss3,
   SiMongodb,
 } from "react-icons/si";
+import { F360Icon } from "../assets/F360Icon";
+import { SolidWorksIcon } from "../assets/SolidWorksIcon";
+import { EagleIcon } from "../assets/EagleIcon";
+
+
 
 const Skills = () => {
   const frontend = [
@@ -82,7 +86,7 @@ const Skills = () => {
     {
       id: 2,
       skill: "Fusion360",
-      img: <AiFillHtml5 size="25px" color="orange" />,
+      img: <Icon  ><F360Icon/></Icon>,
     },
     { id: 3, skill: "Inkskape", img: <SiInkscape size="25px" color="black" /> },
     {
@@ -93,12 +97,12 @@ const Skills = () => {
     {
       id: 5,
       skill: "Eagle",
-      img: <SiEagle size="25px" color="rgb(193,105,32)" />,
+      img: <Icon paddingTop='20px' ><EagleIcon/></Icon>,
     },
     {
       id: 6,
       skill: "SolidWorks",
-      img: <AiFillHtml5 size="25px" color="orange" />,
+      img: <Icon paddingTop='20px' ><SolidWorksIcon/></Icon>,
     },
     { id: 7, skill: "ANSYS", img: <SiAnsys size="25px" color="black" /> },
     { id: 8, skill: "GitHub", img: <SiGithub size="25px" color="black" /> },

@@ -10,9 +10,9 @@ const Contacts = () => {
         <div id='contact'>
             <Container  maxW='100%' bg='black' color='white' h='200px' >
         <Text margin='20px'>Feel free to contact me:</Text>
-            <Box fontSize='20px' margin='20px ' ><Icon><IoLocation size='md' /></Icon> Ernakulam,Kerala 
-      <Icon marginLeft='15px'><MdEmail size='md' /></Icon> fahisayub@gmail.com 
-      <Icon marginLeft='15px'><MdPhone size='md'/></Icon> +91 8606298790</Box> 
+            <Box fontSize='20px' margin='20px ' ><Icon><IoLocation size='20px' /></Icon> Ernakulam,Kerala 
+      <Icon marginLeft='15px'><MdEmail size='20px' /></Icon> fahisayub@gmail.com 
+      <Icon marginLeft='15px'><MdPhone size='20px'/></Icon> +91 8606298790</Box> 
         <SocialButtons/>
 
             </Container>

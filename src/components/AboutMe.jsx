@@ -37,20 +37,20 @@ const AboutMe = () => {
       >
         <Box>
           <Icon>
-            <IoLocation size="md" />
+            <IoLocation size="25px" />
           </Icon>{" "}
           Ernakulam,Kerala{" "}
         </Box>
         <Box>
           {" "}
           <Icon marginLeft="15px">
-            <MdEmail size="md" />
+            <MdEmail size="25px" />
           </Icon>{" "}
           fahisayub@gmail.com{" "}
         </Box>
         <Box>
           <Icon marginLeft="15px">
-            <MdPhone size="md" />
+            <MdPhone size="25px" />
           </Icon>{" "}
           +91 8606298790
         </Box>
