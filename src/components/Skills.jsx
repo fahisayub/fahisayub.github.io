@@ -55,22 +55,22 @@ const Skills = () => {
     },
   ];
   const backend = [
-    {
-      id: 1,
-      skill: "Express.js",
-      img: <SiExpress size="25px" color="black" />,
-    },
-    {
-      id: 2,
-      skill: "MongoDB",
-      img: <SiMongodb size="25px" color="rgb(104,177,62)" />,
-    },
-    {
-      id: 3,
-      skill: "Node.js",
-      img: <FaNodeJs size="25px" color="rgb(102,159,100)" />,
-    },
-    { id: 4, skill: "MySQL", img: <DiMysql size="25px" color="darkblue" /> },
+    // {
+    //   id: 1,
+    //   skill: "Express.js",
+    //   img: <SiExpress size="25px" color="black" />,
+    // },
+    // {
+    //   id: 2,
+    //   skill: "MongoDB",
+    //   img: <SiMongodb size="25px" color="rgb(104,177,62)" />,
+    // },
+    // {
+    //   id: 3,
+    //   skill: "Node.js",
+    //   img: <FaNodeJs size="25px" color="rgb(102,159,100)" />,
+    // },
+    // { id: 4, skill: "MySQL", img: <DiMysql size="25px" color="darkblue" /> },
     {
       id: 5,
       skill: "Firebase",
@@ -111,7 +111,8 @@ const Skills = () => {
       skill: "CLI Bash",
       img: <FcCommandLine size="25px" color="black" />,
     },
-  ];
+  ];// clickup,npm
+
   const hardskils = [
     {
       id: 1,

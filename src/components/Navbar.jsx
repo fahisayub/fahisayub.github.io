@@ -1,6 +1,7 @@
 import React from "react";
-import { Container,Box, Heading,Link } from "@chakra-ui/react";
+import { Container,Box, Heading,Link, IconButton } from "@chakra-ui/react";
 import { Link as ScrollLink } from "react-scroll";
+import {HamburgerIcon} from '@chakra-ui/icons'
 
 const Navbar = () => {
   return (
@@ -18,7 +19,7 @@ const Navbar = () => {
         
       >
         <Box as={ScrollLink} to="intro"spy={true} smooth={true}offset={-80} duration={500}><Heading marginTop={0} fontFamily='cursive' size='lg'>MFahiz</Heading></Box>
-        <Box display="flex" w='50%' 
+        <Box display={["none",'none','flex','flex','flex']} w='50%' 
         justifyContent="space-evenly" >
 
         <Link as={ScrollLink}  to="aboutme"spy={true} smooth={true}offset={-80} duration={500} cursor='pointer'>About Me</Link>
@@ -26,6 +27,7 @@ const Navbar = () => {
         <Link as={ScrollLink} to="projects"spy={true} smooth={true}offset={-80} duration={500}>Projects</Link>
         <Link as={ScrollLink} to="contact"spy={true} smooth={true}offset={-80} duration={500}>Contact</Link>
         </Box>
+        <IconButton variant='outline'  display={["flex",'flex','none','none','none']}><HamburgerIcon/></IconButton>
       </Container>
   );
 };

@@ -38,29 +38,29 @@ const ProjectCard = ({
         </Heading>
         <Text margin="20px" h='100px'>{description}</Text>
         <Text>TechStack Used:</Text>
-        <Box  display='grid'
+        <Box margin='auto'   display='grid'
       gridTemplateColumns={[
-        "repeat(3,1fr)",
-        "repeat(3,1fr)",
-        "repeat(3,1fr)",
-        "repeat(3,1fr)",
+        "repeat(4,1fr)",
+        "repeat(4,1fr)",
+        "repeat(4,1fr)",
+        "repeat(4,1fr)",
         "repeat(4,1fr)",
     ]}
-      gap='10px' margin="auto"  >
+      gap='10px'  >
           {techStack.map(({ id, skill, img }) => {
             return (
               <Box
                 key={id}
                 borderRadius="10px"
-                w="80px"
-                h="60px"
+                w="60px"
+                h="50px"
                 bg="white"
                 textAlign="center"
                 padding="5px"
                 boxShadow="base"
               >
-                <Icon boxSize="30px">{img}</Icon>
-                <Text>{skill}</Text>
+                <Icon boxSize="20px">{img}</Icon>
+                <Text fontSize='10px'>{skill}</Text>
               </Box>
             );
           })}
