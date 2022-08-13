@@ -122,7 +122,7 @@ const Skills = () => {
   ];
 
   return (
-    <Container   id='skills'    maxW="90%"
+    <Container   id='Skills'    maxW="90%"
     >
 
       <Heading textAlign="center" margin="20px">

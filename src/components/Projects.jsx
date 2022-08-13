@@ -56,7 +56,7 @@ const Projects = () => {
   ];
 
   return (
-    <Container id='projects' maxW="90%"  margin='auto'padding='0px'  marginTop='50px'>
+    <Container id='Projects' maxW="90%"  margin='auto'padding='0px'  marginTop='50px'>
       <Heading margin='20px'>My Projects</Heading>
     <Container maxW="100%"  display='grid'
       gridTemplateColumns={[

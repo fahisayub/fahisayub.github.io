@@ -7,10 +7,11 @@ import SocialButtons from './SocialButtons';
 
 const Contacts = () => {
     return (
-        <div id='contact'style={{border: '1px solid blue'}} >
-            <Container  maxW='100%' bg='black' color='white' h='200px'padding='10px' >
+        <div id='Contacts'style={{border: '1px solid blue'}} >
+            <Container  maxW='100%' bg='black' color='white' padding='10px' >
         <Text margin='20px'>Feel free to contact me:</Text>
-            <Box fontSize='20px' margin='20px ' ><Icon><IoLocation size='20px' /></Icon> Ernakulam,Kerala 
+            <Box fontSize='20px' margin='20px ' >
+                <Icon><IoLocation size='20px' /></Icon> Ernakulam,Kerala 
       <Icon marginLeft='15px'><MdEmail size='20px' /></Icon> fahisayub@gmail.com 
       <Icon marginLeft='15px'><MdPhone size='20px'/></Icon> +91 8606298790</Box> 
         <SocialButtons/>

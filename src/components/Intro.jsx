@@ -7,7 +7,7 @@ import SocialButtons from "./SocialButtons";
 const Intro = () => {
   return (
     <Container
-      id='intro'
+      id='Intro'
       margin="auto"
       display={["block", "block", "flex", "flex", "flex"]}
       marginTop='100px'
