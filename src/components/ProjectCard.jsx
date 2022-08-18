@@ -23,10 +23,10 @@ const ProjectCard = ({
     <Container
       maxW="100%"
       margin="auto"
-      h='auto'
+      h="auto"
       boxShadow="lg"
       bg="gray.300"
-      display='block'
+      display="block"
       borderRadius="10px"
       marginTop="10px"
       padding="10px"
@@ -36,17 +36,22 @@ const ProjectCard = ({
         <Heading fontWeight="semibold" size="md" margin="20px">
           {projectTitle}
         </Heading>
-        <Text margin="20px" h='100px'>{description}</Text>
+        <Text margin="20px" h="100px">
+          {description}
+        </Text>
         <Text>TechStack Used:</Text>
-        <Box margin='auto'   display='grid'
-      gridTemplateColumns={[
-        "repeat(4,1fr)",
-        "repeat(4,1fr)",
-        "repeat(4,1fr)",
-        "repeat(4,1fr)",
-        "repeat(4,1fr)",
-    ]}
-      gap='10px'  >
+        <Box
+          margin="auto"
+          display="grid"
+          gridTemplateColumns={[
+            "repeat(4,1fr)",
+            "repeat(4,1fr)",
+            "repeat(4,1fr)",
+            "repeat(4,1fr)",
+            "repeat(4,1fr)",
+          ]}
+          gap="10px"
+        >
           {techStack.map(({ id, skill, img }) => {
             return (
               <Box
@@ -60,16 +65,29 @@ const ProjectCard = ({
                 boxShadow="base"
               >
                 <Icon boxSize="20px">{img}</Icon>
-                <Text fontSize='10px'>{skill}</Text>
+                <Text fontSize="10px">{skill}</Text>
               </Box>
             );
           })}
         </Box>
         <Box display="flex" justifyContent="space-evenly" margin="20px">
-          <Button as="a" bg="darkblue" color="white" href={livelink}>
+          <Button
+            as="a"
+            target="_blank"
+            bg="darkblue"
+            color="white"
+            href={livelink}
+            _hover={{ color: "black", bg: "gray" }}
+          >
             <FiExternalLink /> View Live
           </Button>
-          <Button as="a" bg="black" color="white" href={github}>
+          <Button as="a"
+           target="_blank" 
+          bg="black"
+           color="white" 
+           href={github}
+           _hover={{color:'black',bg:'gray'}}
+           >
             <SiGithub />
             View Code
           </Button>

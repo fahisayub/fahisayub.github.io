@@ -11,7 +11,7 @@ const AboutMe = () => {
       padding="20px"
       borderRadius="20px"
       boxShadow="base"
-      bg="gray.300"
+      bg="gray.100"
       margin="auto"
       marginTop="20px"
     >
@@ -35,20 +35,20 @@ const AboutMe = () => {
         margin="auto"
         justifyContent="center"
       >
-        <Box>
+        <Box fontSize='.7em'>
           <Icon>
-            <IoLocation size="25px" />
+            <IoLocation size="1em" />
           </Icon>{" "}
           Ernakulam,Kerala{" "}
         </Box>
-        <Box>
+        <Box fontSize='.7em'>
           {" "}
           <Icon marginLeft="15px">
             <MdEmail size="25px" />
           </Icon>{" "}
           fahisayub@gmail.com{" "}
         </Box>
-        <Box>
+        <Box fontSize='.7em'>
           <Icon marginLeft="15px">
             <MdPhone size="25px" />
           </Icon>{" "}

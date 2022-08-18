@@ -15,6 +15,7 @@ const SkillBox = ({ skills }) => {
       maxW="100%"
       boxSize="border-box"
       margin="auto"
+      padding='0px'
     >
       {skills.map(({ skill, img, id }) => {
         return (

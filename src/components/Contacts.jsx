@@ -7,7 +7,7 @@ import SocialButtons from './SocialButtons';
 
 const Contacts = () => {
     return (
-        <div id='Contacts'style={{border: '1px solid blue'}} >
+        <Container padding='0px' maxW='100%' id='Contacts'>
             <Container  maxW='100%' bg='black' color='white' padding='10px' >
         <Text margin='20px'>Feel free to contact me:</Text>
             <Box fontSize='20px' margin='20px ' >
@@ -19,7 +19,7 @@ const Contacts = () => {
             </Container>
            
             
-        </div>
+        </Container>
     );
 };
 

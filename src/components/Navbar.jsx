@@ -7,6 +7,7 @@ import {
   IconButton,
   useDisclosure,
   VStack,
+  Spacer,
 } from "@chakra-ui/react";
 import { Link as ScrollLink } from "react-scroll";
 import { HamburgerIcon } from "@chakra-ui/icons";
@@ -43,6 +44,7 @@ const Navbar = () => {
           MFahiz
         </Heading>
       </Box>
+      <Spacer/>
       <Box
         display={["none", "none", "flex", "flex", "flex"]}
         w="50%"

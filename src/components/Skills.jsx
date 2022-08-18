@@ -21,6 +21,7 @@ import {
   SiJavascript,
   SiCss3,
   SiMongodb,
+  SiNetlify,
 } from "react-icons/si";
 import { F360Icon } from "../assets/F360Icon";
 import { SolidWorksIcon } from "../assets/SolidWorksIcon";
@@ -78,39 +79,41 @@ const Skills = () => {
     },
   ];
   const toolsets = [
+    { id: 1, skill: "GitHub", img: <SiGithub size="25px" color="black" /> },
+    { id: 2, skill: "Netlify", img: <SiNetlify size="25px" color="rgb(32,169,180)" /> },
+
     {
-      id: 1,
+      id: 3,
+      skill: "CLI Bash",
+      img: <FcCommandLine size="25px" color="black" />,
+    },
+    {
+      id: 4,
       skill: "AdobeXD",
       img: <SiAdobexd size="25px" color="rgb(69,1,53)" />,
     },
     {
-      id: 2,
+      id: 5,
       skill: "Fusion360",
       img: <Icon  ><F360Icon/></Icon>,
     },
-    { id: 3, skill: "Inkskape", img: <SiInkscape size="25px" color="black" /> },
+    { id: 6, skill: "Inkskape", img: <SiInkscape size="25px" color="black" /> },
     {
-      id: 4,
+      id: 7,
       skill: "Illustrator",
       img: <SiAdobeillustrator size="25px" color="rgb(49,0,0)" />,
     },
     {
-      id: 5,
+      id: 8,
       skill: "Eagle",
       img: <Icon paddingTop='20px' ><EagleIcon/></Icon>,
     },
     {
-      id: 6,
+      id: 9,
       skill: "SolidWorks",
       img: <Icon paddingTop='20px' ><SolidWorksIcon/></Icon>,
     },
-    { id: 7, skill: "ANSYS", img: <SiAnsys size="25px" color="black" /> },
-    { id: 8, skill: "GitHub", img: <SiGithub size="25px" color="black" /> },
-    {
-      id: 9,
-      skill: "CLI Bash",
-      img: <FcCommandLine size="25px" color="black" />,
-    },
+    { id: 10, skill: "ANSYS", img: <SiAnsys size="25px" color="black" /> },
   ];// clickup,npm
 
   const hardskils = [
@@ -122,7 +125,8 @@ const Skills = () => {
   ];
 
   return (
-    <Container   id='Skills'    maxW="90%"
+    <Container   id='Skills'    maxW="90%"padding='10px'
+    margin='auto'
     >
 
       <Heading textAlign="center" margin="20px">
@@ -136,9 +140,9 @@ const Skills = () => {
       gridTemplateColumns={[
         "repeat(1,1fr)",
         "repeat(2,1fr)",
-        "repeat(3,1fr)",
-        "repeat(3,1fr)",
-        "repeat(3,1fr)",
+        "repeat(2,1fr)",
+        "repeat(2,1fr)",
+        "repeat(2,1fr)",
     ]}
       gap='20px'
 
@@ -153,16 +157,16 @@ const Skills = () => {
         <Box p='10px' boxShadow='inner'borderRadius='10px' h='auto'>
 
       <Heading size="lg" margin="20px">
-        Backend
+        Toolsets
       </Heading>
-      <SkillBox skills={backend} />
+      <SkillBox skills={toolsets} />
         </Box>
         <Box p='10px' boxShadow='inner'borderRadius='10px' h='auto'>
 
       <Heading size="lg" margin="20px">
-        Toolsets
+        Backend
       </Heading>
-      <SkillBox skills={toolsets} />
+      <SkillBox skills={backend} />
         </Box>
         <Box p='10px' boxShadow='inner'borderRadius='10px' h='auto'>
 

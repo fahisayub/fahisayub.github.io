@@ -17,7 +17,7 @@ const Intro = () => {
     >
       <Img
         src={Mfahiz}
-        borderRadius="50%"
+        borderRadius="40%"
         height="250px"
         width="250px"
         alt="logo"
@@ -42,7 +42,8 @@ const Intro = () => {
           target='_blank'
           bgGradient="linear(to-l, #7928CA, #FF0080)"
           color="white"
-          href="https://drive.google.com/file/d/1N6vSNzfhRjmvvcA-aYGj5qGoF8bW0erx/view?usp=sharing"
+          href="https://drive.google.com/file/d/1mp9pHHSYGICZnQi8MncxAKVCE90DR6ZR/view?usp=sharing"
+          _hover={{bgGradient:"linear(to-l , #FF0080, #7928CA)"}}
         >
           <DownloadIcon marginRight='5px' /> Download My Resume here
         </Button>
