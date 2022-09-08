@@ -44,6 +44,7 @@ const Intro = () => {
           color="white"
           href="https://drive.google.com/file/d/1mp9pHHSYGICZnQi8MncxAKVCE90DR6ZR/view?usp=sharing"
           _hover={{bgGradient:"linear(to-l , #FF0080, #7928CA)"}}
+          download='muhammed-fahiz-resume'
         >
           <DownloadIcon marginRight='5px' /> Download My Resume here
         </Button>
