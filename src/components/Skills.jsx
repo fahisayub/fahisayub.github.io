@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Heading,Box, Icon} from "@chakra-ui/react";
+import { Container, Heading,Box, Icon, Text} from "@chakra-ui/react";
 import SkillBox from "./SkillBox";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaNodeJs } from "react-icons/fa";
@@ -26,6 +26,13 @@ import {
 import { F360Icon } from "../assets/F360Icon";
 import { SolidWorksIcon } from "../assets/SolidWorksIcon";
 import { EagleIcon } from "../assets/EagleIcon";
+import { DsaIcon } from "../assets/DsaIcon";
+import { AccountabilityIcon } from "../assets/AccountabilityIcon";
+import { InterpersonalIcon } from "../assets/InterpersonalIcon";
+import { SelfstudyIcon } from "../assets/SelfstudyIcon";
+import { ProblemSolvingIcon } from "../assets/ProblemSolvingIcon";
+import { TeamworkIcon } from "../assets/TeamworkIcon";
+import { AdaptabilityIcon } from "../assets/AdaptabilityIcon";
 
 
 
@@ -77,6 +84,11 @@ const Skills = () => {
       skill: "Firebase",
       img: <SiFirebase size="25px" color="orange" />,
     },
+    {
+      id: 5,
+      skill: "DSA",
+      img: <Icon   ><DsaIcon/></Icon>,
+    },
   ];
   const toolsets = [
     { id: 1, skill: "GitHub", img: <SiGithub size="25px" color="black" /> },
@@ -114,13 +126,43 @@ const Skills = () => {
       img: <Icon paddingTop='20px' ><SolidWorksIcon/></Icon>,
     },
     { id: 10, skill: "ANSYS", img: <SiAnsys size="25px" color="black" /> },
-  ];// clickup,npm
-
-  const hardskils = [
     {
-      id: 1,
+      id: 11,
       skill: "Arduino",
       img: <SiArduino size="25px" color="rgb(78,201,196)" />,
+    },
+  ];// clickup,npm
+
+  const softskils = [
+    {
+      id: 1,
+      skill: "Team work",
+      img: <Icon><TeamworkIcon/></Icon>,
+    },
+    {
+      id: 2,
+      skill: "Accountability",
+      img: <Icon><AccountabilityIcon/></Icon>,
+    },
+    {
+      id: 3,
+      skill: "Self-learnig",
+      img: <Icon><SelfstudyIcon/></Icon>,
+    },
+    {
+      id: 4,
+      skill: "Interpersonal",
+      img: <Icon><InterpersonalIcon/></Icon>,
+    },
+    {
+      id: 5,
+      skill: "Problem-solving",
+      img: <Icon><ProblemSolvingIcon/></Icon>,
+    },
+    {
+      id: 6,
+      skill: "Adaptability",
+      img: <Icon><AdaptabilityIcon/></Icon>,
     },
   ];
 
@@ -147,33 +189,33 @@ const Skills = () => {
       gap='20px'
 
     >
-        <Box p='10px' boxShadow='inner'borderRadius='10px' h='auto'>
+        <Box p='10px' boxShadow='base'borderRadius='10px' h='auto'>
 
       <Heading size="lg" margin="20px">
         Frontent
       </Heading>
       <SkillBox skills={frontend} />
         </Box>
-        <Box p='10px' boxShadow='inner'borderRadius='10px' h='auto'>
+        <Box p='10px' boxShadow='base'borderRadius='10px' h='auto'>
 
       <Heading size="lg" margin="20px">
         Toolsets
       </Heading>
       <SkillBox skills={toolsets} />
         </Box>
-        <Box p='10px' boxShadow='inner'borderRadius='10px' h='auto'>
+        <Box p='10px' boxShadow='base'borderRadius='10px' h='auto'>
 
       <Heading size="lg" margin="20px">
         Backend
       </Heading>
       <SkillBox skills={backend} />
         </Box>
-        <Box p='10px' boxShadow='inner'borderRadius='10px' h='auto'>
+        <Box p='10px' boxShadow='base'borderRadius='10px' h='auto'>
 
       <Heading size="lg" margin="20px">
-        Hardware
+        Soft Skills
       </Heading>
-      <SkillBox skills={hardskils} />
+      <SkillBox skills={softskils} />
         </Box>
     </Container>
     </Container>

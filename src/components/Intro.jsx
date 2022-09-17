@@ -42,8 +42,9 @@ const Intro = () => {
           target='_blank'
           bgGradient="linear(to-l, #7928CA, #FF0080)"
           color="white"
-          href="https://drive.google.com/file/d/1mp9pHHSYGICZnQi8MncxAKVCE90DR6ZR/view?usp=sharing"
+          href='/MuhammedFahiz_Resume.pdf'
           _hover={{bgGradient:"linear(to-l , #FF0080, #7928CA)"}}
+          download={true}
         >
           <DownloadIcon marginRight='5px' /> Download My Resume here
         </Button>

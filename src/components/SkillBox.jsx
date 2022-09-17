@@ -44,7 +44,7 @@ const SkillBox = ({ skills }) => {
               {img}
             </Icon>
 
-            <Heading size="sm" fontWeight="semibold" alignItems="center">
+            <Heading fontSize="12px" fontWeight="semibold" alignItems="center">
               {skill}
             </Heading>
           </Box>
