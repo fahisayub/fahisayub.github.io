@@ -8,9 +8,10 @@ import {
   useDisclosure,
   VStack,
   Spacer,
+  Button,
 } from "@chakra-ui/react";
 import { Link as ScrollLink } from "react-scroll";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { DownloadIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
   const { getDisclosureProps, getButtonProps } = useDisclosure();
@@ -21,16 +22,18 @@ const Navbar = () => {
 
   return (
     <Container
-      h="60px"
-      pos="fixed"
+      h="80px"
+      marginBottom='50px'
+      pos='fixed'
       zIndex="1"
-      marginBottom="50px"
       padding="20px"
       maxW="100%"
       display="flex"
       justifyContent="space-between"
-      bg="black"
-      color="white"
+      bg="brand"
+      borderRadius='20px'
+      color="black"
+      shadow='base'
     >
       <Box
         as={ScrollLink}
@@ -67,6 +70,20 @@ const Navbar = () => {
           );
         })}
       </Box>
+      <Button
+        margin='auto'
+        as="a"
+        target='_blank'
+        variant='outline'
+        colorScheme='black'
+        border='4px'
+        borderRadius='10px'
+        href='/MuhammedFahiz_Resume.pdf'
+        
+          download={true}
+        >
+          <DownloadIcon marginRight='5px' />Resume
+        </Button>
       <Box >
         
         <IconButton

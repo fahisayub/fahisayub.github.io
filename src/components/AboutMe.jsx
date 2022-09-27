@@ -10,8 +10,6 @@ const AboutMe = () => {
       maxW="90%"
       padding="20px"
       borderRadius="20px"
-      boxShadow="base"
-      bg="gray.100"
       margin="auto"
       marginTop="20px"
     >

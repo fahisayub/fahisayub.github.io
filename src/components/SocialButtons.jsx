@@ -5,20 +5,20 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 const SocialButtons = () => {
   return (
     <Container
-      display={["block", "block", "flex", "flex", "flex"]}
-      justifyContent="space-evenly"
-      marginTop="20px"
+    width='200px'
+      display="block"
+      marginTop="10px"
     >
       <Button
         as="a"
-        margin="5px"
+        margin="5px"    width='150px'
+
         size={["sm", "sm", "md", "md", "md"]}
         href="https://github.com/fahisayub"
-        bg="black"
+        bg="brand_secondary"
         target='_blank'
-        border="1px solid white"
-        color="white"
-        _hover={{color:'black',bg:'gray'}}
+        color="brand"
+        _hover={{color:'green.400',bg:'black'}}
       >
         {" "}
         <SiGithub />
@@ -26,14 +26,14 @@ const SocialButtons = () => {
       </Button>
       <Button
         as="a"
-        margin="5px"
+        margin="5px"    width='150px'
+
         size={["sm", "sm", "md", "md", "md"]}
         href="https://www.linkedin.com/in/muhammed-fahiz-p-a-62804515b/"
-        bg="black"
+        bg="brand_secondary"
         target='_blank'
-        border="1px solid white"
-        color="white"
-        _hover={{color:'black',bg:'gray'}}
+        color="brand"
+        _hover={{color:'green.400',bg:'black'}}
       >
         {" "}
         <SiLinkedin />
