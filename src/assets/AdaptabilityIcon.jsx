@@ -7,7 +7,7 @@ export const AdaptabilityIcon = createIcon({
 
   // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
   path: (<g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)"
-  fill="#000000" stroke="none">
+  fill="tomato" stroke="none">
   <path d="M4161 6758 c-28 -91 -233 -870 -229 -874 3 -2 31 -7 64 -10 53 -5 65
   -3 118 25 47 25 70 31 120 31 228 0 352 -267 202 -437 -124 -141 -327 -121
   -432 42 -28 45 -42 57 -86 73 -29 11 -56 17 -59 14 -8 -10 -243 -892 -238

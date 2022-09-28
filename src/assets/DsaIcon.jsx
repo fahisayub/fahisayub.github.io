@@ -8,7 +8,7 @@ export const DsaIcon = createIcon({
   // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
   path: (
     <g transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="Indigo" stroke="none">
 <path d="M2180 3850 c0 -6 -43 -10 -110 -10 -67 0 -110 -4 -110 -10 0 -5 -13
 -10 -30 -10 -16 0 -30 -4 -30 -10 0 -5 -9 -10 -20 -10 -11 0 -20 5 -20 10 0 6
 -4 10 -10 10 -5 0 -10 -9 -10 -20 0 -12 -7 -20 -16 -20 -18 0 -44 -23 -44 -40

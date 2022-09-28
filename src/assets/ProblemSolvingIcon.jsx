@@ -7,7 +7,7 @@ export const ProblemSolvingIcon = createIcon({
 
   // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
   path: (<g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)"
-  fill="#000000" stroke="none">
+  fill="orange" stroke="none">
   <path d="M3445 6755 c-25 -24 -25 -27 -25 -193 0 -163 1 -169 23 -190 32 -30
   87 -29 115 1 21 22 22 33 22 191 0 164 0 167 -25 191 -15 16 -36 25 -55 25
   -19 0 -40 -9 -55 -25z"/>

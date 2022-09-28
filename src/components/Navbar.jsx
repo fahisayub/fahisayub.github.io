@@ -9,6 +9,7 @@ import {
   VStack,
   Spacer,
   Button,
+  Divider,
 } from "@chakra-ui/react";
 import { Link as ScrollLink } from "react-scroll";
 import { DownloadIcon, HamburgerIcon } from "@chakra-ui/icons";
@@ -25,7 +26,7 @@ const Navbar = () => {
       h="80px"
       marginBottom='50px'
       pos='fixed'
-      zIndex="1"
+      zIndex="2"
       padding="20px"
       maxW="100%"
       display="flex"
@@ -70,26 +71,13 @@ const Navbar = () => {
           );
         })}
       </Box>
-      <Button
-        margin='auto'
-        as="a"
-        target='_blank'
-        variant='outline'
-        colorScheme='black'
-        border='4px'
-        borderRadius='10px'
-        href='/MuhammedFahiz_Resume.pdf'
-        
-          download={true}
-        >
-          <DownloadIcon marginRight='5px' />Resume
-        </Button>
+     
       <Box >
         
         <IconButton
         float='right'
           variant="outline"
-          _hover={{bg:'gray.700'}}
+          colorScheme='black'
           {...buttonProps}
           display={["flex", "flex", "none", "none", "none"]}
         >
@@ -98,7 +86,7 @@ const Navbar = () => {
         <VStack
         marginTop='40px'
           {...disclosureProps}
-          bg="black"
+          bg="brand_secondary"
           padding="5px"
           borderRadius="5px"
           display={["flex", "flex", "none", "none", "none"]}
@@ -109,10 +97,8 @@ const Navbar = () => {
                 as={ScrollLink}
                 key={i}
                 {...buttonProps}
-                borderBottom="1px solid grey"
-                _hover={{border:"3px solid gray"}}
-                padding="5px"
                 width='100%'
+                color='brand'
                 borderRadius="5px"
                 to={navlink}
                 spy={true}
@@ -122,9 +108,24 @@ const Navbar = () => {
                 cursor="pointer"
               >
                 {navlink}
+                <Divider/>
               </Link>
             );
           })}
+           <Button
+        margin='auto'
+        as="a"
+        target='_blank'
+        variant='outline'
+        color='brand'
+        border='1px'
+        borderRadius='10px'
+        href='/MuhammedFahiz_Resume.pdf'
+        
+          download={true}
+        >
+          <DownloadIcon marginRight='5px' />Resume
+        </Button>
         </VStack>
       </Box>
     </Container>

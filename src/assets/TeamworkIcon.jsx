@@ -7,7 +7,7 @@ export const TeamworkIcon = createIcon({
 
   // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
   path: (<g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)"
-  fill="#000000" stroke="none">
+  fill="black" stroke="none">
   <path d="M2000 6980 c-517 -12 -754 -21 -775 -29 -100 -40 -136 -180 -69 -269
   40 -52 75 -62 221 -62 156 0 176 -8 171 -73 -3 -37 -7 -44 -38 -59 -30 -15
   -65 -18 -235 -18 -189 0 -202 -2 -240 -23 -125 -71 -125 -243 0 -314 37 -21

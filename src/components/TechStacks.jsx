@@ -1,135 +1,73 @@
-import { Container, Grid, GridItem, Icon, Text } from '@chakra-ui/react';
+import { Grid,  } from '@chakra-ui/react';
 import React from 'react';
-import  {F360Icon}  from '../assets/F360Icon'
+import { AiFillHtml5 } from "react-icons/ai";
+// import { FaNodeJs } from "react-icons/fa";
 
+import {
+ 
+  SiChakraui,
+  SiFirebase,
+  SiReact,SiHeroku,
+//   SiExpress,
+  SiRedux,
+  SiFlutter,
+  SiJavascript,
+  SiCss3,
+//   SiMongodb,
+ 
+} from "react-icons/si";
+
+import { DsaIcon } from "../assets/DsaIcon";
+
+import { SkillItem, SkillTitleItem } from './SkillItemCard';
 const TechStacks = () => {
 
-const Skill=({children,dis,title})=>{
-    return(
-            
-           
-<GridItem colSpan={1}
-borderRadius={['.6em','.8em','1em']}
-overflow='hidden'
-bg={dis?'':'papayawhip'}
-border={dis?'none':'2px'}
-borderColor='brand'
- >
-    {dis?'':<Container
-    transform='rotate(-45deg)'
-    margin='auto'
-    p='0px'
-    pt={['2px','15px']}
-    ml={['1px','-1px']}
-    maxW={['3em','6em']}
-    h={['3em','6em']}
-    
-    >
-         <Text bg='brand'borderRadius={['.6em','.8em','1em']}
-            transform='rotate(-45deg)'
-            w='full'
-            pos='fixed'
-            my={['2px','2px']}
-            mx={['-12px','-25px']}
-            fontSize={['.25em','.5em','1em']} fontWeight='semibold'>{title}</Text>
-    <Icon  fontSize={['2.5em','5em']}m='0px'>{children}</Icon>
-    </Container>}
-    </GridItem>
-    );
-}
 
     return (
         <Grid
+        id='Skills'
   h={['300px','500px','700px']}maxW={['300px','500px','700px']}
   m='auto'
   transform="rotate(45deg)"
   templateRows='repeat(6, 1fr)'
   templateColumns='repeat(6, 1fr)'
   gap={[2,3,4]}
+  mt={['100px','200px',"200px"]}
 >
-  <GridItem 
-  rowSpan={2}
-  borderRadius={['.8em','1em','2em']}
-  bg='brand_secondary'
-  border='4px'
-  borderColor='brand'
-   colSpan={2}
-     > 
-     <Container
-         transform='rotate(-45deg)'
-         my='-20px'
-         p='0px'
-         pt={['2px','50px']}
-         ml={['1px','5px']}
-         maxW={['5em','15em']}
-         border='1px solid white'
-         h={['5em','15em']}
-         >
-     <Text 
-            
-            color='brand'
-            border='1px solid white'
-            fontSize={['.8em','1.2em','2.5em']} 
-            fontWeight='semibold'>
-                Tech Stacks
-                </Text>
+ <SkillTitleItem mtitle={"Tech Stacks"} ltitle={'Frontend'} rtitle={"Backend"} />
 
-            </Container>
-            <Text 
-            transform='rotate(360deg)'
-            color='brand'
-            mx='50px'
-            my='-40px'
-            fontSize={['.5em','1em','1.5em']} 
-            fontWeight='semibold'>
-                Frontend
-                </Text>
-                <Text 
-            transform='rotate(270deg)'
-            border='1px solid white'
-            color='brand'
-            marginLeft='120px'
-            my='-150px'
-            fontSize={['.5em','1em','1.5em']} 
-            fontWeight='semibold'>
-                Backend
-                </Text>
-     </GridItem>
-
-
-
-  <Skill   >                                    2</Skill>
-  <Skill   >                                    3</Skill>
-  <Skill  dis='none'>                           4</Skill>
-  <Skill  dis='none' >                          5</Skill>
-  <Skill   >                                    6</Skill>
-  <Skill   >                                    7</Skill>
-  <Skill   >                                    8</Skill>
-  <Skill   dis='none'>                          9</Skill>
-  <Skill   >                                   10</Skill>
-  <Skill   >                                   11</Skill>
-  <Skill  dis='none'>                          12</Skill>
-  <Skill   >                                   13</Skill>
-  <Skill   >                                   14</Skill>
-  <Skill   >                                   15</Skill>
-  <Skill   >                                   16</Skill>
-  <Skill   >                                   17</Skill>
-  <Skill   >                                   18</Skill>
-  <Skill  dis='none' >                         19</Skill>
-  <Skill   >                                   20</Skill>
-  <Skill   >                                   21</Skill>
-  <Skill  dis='none'>                          22</Skill>
-  <Skill   >                                   23</Skill>
-  <Skill   >                                   24</Skill>
-  <Skill   >                                   25</Skill>
-  <Skill  dis='none' >                         26</Skill>
-  <Skill  dis='none' >                         27</Skill>
-  <Skill  dis='none' >                         28</Skill>
-  <Skill  dis='none'>                          29</Skill>
-  <Skill   >                                   30</Skill>
-  <Skill   >                                   31</Skill>
-  <Skill  dis='none' >                         32</Skill>
-  <Skill  dis='none' >                         33</Skill>
+  <SkillItem  skill='Firebase' >   <SiFirebase size="24px" color="orange" />                                 2</SkillItem>
+  <SkillItem  skill='Hreoku' >    <SiHeroku size="24px" color="indigo" />                                3</SkillItem>
+  <SkillItem  dis='none'>                           4</SkillItem>
+  <SkillItem  dis='none' >                          5</SkillItem>
+  <SkillItem  skill='DSA' >   <DsaIcon/>                                 6</SkillItem>
+  <SkillItem  skill='' >                                    7</SkillItem>
+  <SkillItem  skill='' >                                    8</SkillItem>
+  <SkillItem   dis='none'>                          9</SkillItem>
+  <SkillItem  skill='HTML' > <AiFillHtml5 size="24px" color="rgb(233,89,35)"/>                                10</SkillItem>
+  <SkillItem  skill='CSS' >   <SiCss3 size="24px" color='blue'/>                               11</SkillItem>
+  <SkillItem  dis='none'>                          12</SkillItem>
+  <SkillItem  skill='' >                                   13</SkillItem>
+  <SkillItem  skill='' >                                   14</SkillItem>
+  <SkillItem  skill='' >                                   15</SkillItem>
+  <SkillItem  skill='JavaScript' >    <SiJavascript size="24px" color="orange" />                               16</SkillItem>
+  <SkillItem  skill='React' >     <SiReact size="24px" color="skyblue" />                                17</SkillItem>
+  <SkillItem  skill='Redux' >         <SiRedux size="24px" color="darkblue" />                          18</SkillItem>
+  <SkillItem  dis='none' >                         19</SkillItem>
+  <SkillItem  skill='' >                                   20</SkillItem>
+  <SkillItem  skill='' >                                   21</SkillItem>
+  <SkillItem  dis='none'>                          22</SkillItem>
+  <SkillItem  skill='Chakra-UI' >   <SiChakraui size="24px" color="rgb(78,201,196)" />                                23</SkillItem>
+  <SkillItem  skill='Flutter' >    <SiFlutter size="24px" color="rgb(94,200,248)" />                               24</SkillItem>
+  <SkillItem  skill='' >                                   25</SkillItem>
+  <SkillItem  dis='none' >                         26</SkillItem>
+  <SkillItem  dis='none' >                         27</SkillItem>
+  <SkillItem  dis='none' >                         28</SkillItem>
+  <SkillItem  dis='none'>                          29</SkillItem>
+  <SkillItem  skill='' >                                   30</SkillItem>
+  <SkillItem  skill='' >                                   31</SkillItem>
+  <SkillItem  dis='none' >                         32</SkillItem>
+  <SkillItem  dis='none' >                         33</SkillItem>
 </Grid>
     );
 };

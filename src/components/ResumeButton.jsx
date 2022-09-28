@@ -1,41 +1,49 @@
-import {  Container, Text,Button } from '@chakra-ui/react';
-import React from 'react';
+import { DownloadIcon } from "@chakra-ui/icons";
+import { Container, Text, Button } from "@chakra-ui/react";
+import React from "react";
 
 const ResumeButton = () => {
-    return (
-        <Container  height= '424px'
-        width= '424px'>
-        <Container transform= 'rotate(45deg)'
-    borderRadius= '3.125rem'
-    height= '300px'
-    width= '300px'
-    bg= '#79d392 '>
-            
-        <Container transform= 'rotate(-45deg)'
-         height= '300px'
-         width= '300px'
-         py='50px'
-         >
-        <Text 
-    fontSize='30px'
-    color='#000000'>Download 
-  my Resume here</Text>
-        <Button borderRadius= '1.25rem'
-    height= '65px'
-    width= '185px'
-    bg= '#2d2c2c' >
-        <Text textAlign= 'center'
-    fontSize= '32px'
-    color= '#79d392'>Resume</Text></Button>
-    </Container>
+  return (
+      <Container
+        transform="rotate(45deg)"
+        borderRadius={['1em',"2rem"]}
+        height={["100px","200px"]}
+        width={["100px","200px"]}
+        bg="brand "
+        p="0px"
+        mt={['0px','0px','0em','0em','0em']}
+        ml={['1em','5em','5em','10em','20em']}
+      >
+        <Container
+          transform="rotate(-45deg)"
+          height={["100px","200px"]}
+        width={["100px","200px"]}
+          py={['25px',"25px"]}
+          ml={['0px','-10px']}
+        >
+          <Text fontSize={['.6em',"1.2em"]}fontWeight='semibold' >
+            Download my Resume here
+          </Text>
+          <Button
+            borderRadius={['.5em',".8rem"]}
+            height={['2em','2em']}
+            width={['6em','6em']}
+            margin="auto"
+            colosrScheme='balck'
+            as="a"
+            target="_blank"
+            href="/MuhammedFahiz_Resume.pdf"
+            download={true}
+            bg="brand_secondary"
+            fontSize={['.5em','1.5em']}
+            color='brand'
+            _hover={{bg:'balck' , color:'green.400'}}
+          ><DownloadIcon marginRight='5px'   />
+              Resume
+          </Button>
+        </Container>
       </Container>
-      </Container>
-    );
+  );
 };
 
 export default ResumeButton;
-
-
-  
- 
-  

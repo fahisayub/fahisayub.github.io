@@ -8,7 +8,7 @@ export const AccountabilityIcon = createIcon({
   // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
   path: (
     <g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="Indigo" stroke="none">
 <path d="M3470 6889 c-247 -29 -417 -278 -356 -519 33 -128 122 -234 241 -286
 l60 -26 -3 -202 c-2 -110 -6 -204 -10 -208 -7 -7 -319 -148 -328 -148 -2 0 -4
 82 -4 183 -1 124 -5 189 -13 203 -7 12 -96 93 -199 179 -174 147 -187 160
