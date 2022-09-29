@@ -3,7 +3,7 @@ import { createIcon } from '@chakra-ui/icons'
 // using `path`
 export const TeamworkIcon = createIcon({
   displayName: 'TeamworkIcon',
-  viewBox:"0, 0, 650,600",
+  viewBox:"0, 0, 800,800",
 
   // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
   path: (<g transform="translate(0.000000,700.000000) scale(0.100000,-0.100000)"

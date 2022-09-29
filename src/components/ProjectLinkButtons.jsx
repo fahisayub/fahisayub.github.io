@@ -1,42 +1,42 @@
 import React from "react";
 import { SiGithub } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, Divider, Flex } from "@chakra-ui/react";
 const ProjectLinkButtons = ({ livelink, github }) => {
   return (
-    <Box
-      display="flex"
-      gap="5px"
-      flexDir="column"
-      margin="10px"
-    >
+    <Flex
+    margin="auto"
+    mt='.5em'
+    w={['120px','200px']}
+gap='5px'
+>
       <Button
         as="a"
         target="_blank"
         bg="darkblue"
         color="white"
         m="auto"
-        w="150px"
+        size={['xs',"md"]}
         href={livelink}
         _hover={{ color: "black", bg: "gray" }}
       >
-        <FiExternalLink /> View Live
+        <FiExternalLink /> Live
       </Button>
-
+<Divider orientation="vertical" />
       <Button
         as="a"
         target="_blank"
         bg="black"
         color="white"
         m="auto"
-        w="150px"
+        size={['xs',"md"]}
         href={github}
         _hover={{ color: "black", bg: "gray" }}
       >
         <SiGithub />
-        View Code
+         Code
       </Button>
-    </Box>
+    </Flex>
   );
 };
 

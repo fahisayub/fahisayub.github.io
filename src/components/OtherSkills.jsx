@@ -29,7 +29,7 @@ const OtherSkills = () => {
 
     return (
         <Grid
-  h={['300px','500px','700px']}maxW={['300px','500px','700px']}
+  h={['290px','500px','700px']}maxW={['290px','500px','700px']}
   m='auto'
   mt='50px'
   transform="rotate(45deg)"
@@ -39,26 +39,26 @@ const OtherSkills = () => {
 >
   <SkillTitleItem mtitle={"Other Skills"} ltitle={"Mindsets"} rtitle={"Toolsets"} />
 
-  <SkillItem  skill='Github' >     <SiGithub size="24px" color="black" />                               2</SkillItem>
-  <SkillItem  skill='Netlify' >         <SiNetlify size="24px" color="rgb(32,169,180)" />                           3</SkillItem>
+  <SkillItem  skill='Github' >     <SiGithub size="18px" color="black" />                               2</SkillItem>
+  <SkillItem  skill='Netlify' >         <SiNetlify size="18px" color="black" />                           3</SkillItem>
   <SkillItem  dis='none'>                           4</SkillItem>
   <SkillItem  dis='none' >                          5</SkillItem>
-  <SkillItem  skill='CLI Bash' >         <FcCommandLine size="24px" color="black" />                           6</SkillItem>
-  <SkillItem  skill='Cypress' >         <SiCypress size="24px" color="black"/>                           7</SkillItem>
-  <SkillItem  skill='Figma' >           <SiFigma size="24px" />                         8</SkillItem>
+  <SkillItem  skill='CLI Bash' >         <FcCommandLine size="18px" color="black" />                           6</SkillItem>
+  <SkillItem  skill='Cypress' >         <SiCypress size="18px" color="black"/>                           7</SkillItem>
+  <SkillItem  skill='Figma' >           <SiFigma size="18px" />                         8</SkillItem>
   <SkillItem   dis='none'>                          9</SkillItem>
   <SkillItem   skill='Team Work'>  <TeamworkIcon/>                                 10</SkillItem>
   <SkillItem   skill='Ownership'>  <AccountabilityIcon/>                                 11</SkillItem>
   <SkillItem  dis='none'>                          12</SkillItem>
-  <SkillItem  skill='Adobe XD' >   <SiAdobexd size="24px" color="rgb(69,1,53)" />                                13</SkillItem>
-  <SkillItem  skill='Inkscape' >        <SiInkscape size="24px" color="black" />                            14</SkillItem>
+  <SkillItem  skill='Adobe XD' >   <SiAdobexd size="18px" color="black" />                                13</SkillItem>
+  <SkillItem  skill='Inkscape' >        <SiInkscape size="18px" color="black" />                            14</SkillItem>
   <SkillItem  skill='Fusion360' >       <F360Icon/>                            15</SkillItem>
   <SkillItem  skill='Adaptable' >       <AdaptabilityIcon/>                            16</SkillItem>
   <SkillItem  skill='Self Learn' >    <SelfstudyIcon/>                               17</SkillItem>
   <SkillItem  skill='Creative' >      <ProblemSolvingIcon/>                             18</SkillItem>
   <SkillItem  dis='none' >                         19</SkillItem>
   <SkillItem  skill='Eagle' >        <EagleIcon/>                           20</SkillItem>
-  <SkillItem  skill='Arduino' >       <SiArduino size="24px" color="rgb(78,201,196)" />                            21</SkillItem>
+  <SkillItem  skill='Arduino' >       <SiArduino size="18px" color="black" />                            21</SkillItem>
   <SkillItem  dis='none'>                          22</SkillItem>
   <SkillItem  skill='Growth' >                                   23</SkillItem>
   <SkillItem  skill='Innovative' >                                   24</SkillItem>

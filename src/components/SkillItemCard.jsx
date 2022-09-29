@@ -57,7 +57,7 @@ const SkillItem = ({children,dis,skill})=>{
     return(<GridItem colSpan={1}
 borderRadius={['.6em','.8em','1em']}
 overflow='hidden'
-bg={dis?'':'green.500'}
+bg={dis?'':'brand'}
 
 
  >
@@ -79,7 +79,7 @@ bg={dis?'':'green.500'}
             my={['2px','2px']}
             mx={['-12px','-25px']}
             fontSize={['.25em','.5em','1em']} fontWeight='semibold'>{skill}</Text>
-    <Icon  fontSize={['2.5em','5em']}m='0px'>{children}</Icon>
+    <Icon  fontSize={['2.2em','5em']}ml={['8px','20px']}mt={['8px','20px']}>{children}</Icon>
     </Container>}
     </GridItem>
     );

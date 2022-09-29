@@ -3,7 +3,7 @@ import { createIcon } from '@chakra-ui/icons'
 // using `path`
 export const EagleIcon = createIcon({
   displayName: 'EagleIcon',
-  viewBox:"0, 0, 900,900",
+  viewBox:"0, 0, 1200,1200",
 
   // path can also be an array of elements, if you have multiple paths, lines, shapes, etc.
   path: (

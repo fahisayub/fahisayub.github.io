@@ -1,11 +1,13 @@
+import { DeleteIcon } from '@chakra-ui/icons';
 import { Box, Icon, Text } from '@chakra-ui/react';
 import React from 'react';
+import { SiHtml5 } from 'react-icons/si';
 
 const ProjectStack = ({techStack}) => {
     return (
         <Box
           display="grid"
-          w='200px'
+          w={['100px','150px']}
           m='auto'
           gridTemplateColumns={[
             "repeat(3,1fr)",
@@ -14,23 +16,22 @@ const ProjectStack = ({techStack}) => {
             "repeat(3,1fr)",
             "repeat(3,1fr)",
           ]}
-          gap="10px"
+          gap={['5px',"10px"]}
         >
             
           {techStack?.map(({id,img,skill}) => {
             return (
               <Box
                 key={id}
-                borderRadius="10px"
-                w="60px"
-                h="50px"
+                borderRadius={['.5em',".8em"]}
+                w={['30px',"40px"]}
+                h={['30px',"40px"]}
                 bg="white"
                 textAlign="center"
-                padding="5px"
+                p={['5px',"5px"]}
                 boxShadow="base"
               >
-                <Icon boxSize="20px">{img}</Icon>
-                <Text fontSize="10px">{skill}</Text>
+                <Icon boxSize={['30px',"20px"]}>{img}</Icon>
               </Box>
             );
           })}

@@ -13,6 +13,8 @@ import TechStacks from '../components/TechStacks';
 import OtherSkills from '../components/OtherSkills';
 import MyImageCard from '../components/MyImageCard';
 import ResumeButton from '../components/ResumeButton';
+import SeeInAction from '../components/SeeInAction';
+import ProjectHeading from '../components/ProjectHeading';
 const Home = () => {
    
     return (
@@ -22,12 +24,14 @@ const Home = () => {
         <MyImageCard/>
         <ResumeButton/>
         <SummaryAboutme/>
+        <Whyme/>
       <TechStacks/>
         <OtherSkills/>
-      {/* <Whyme/>
-      <TechStacks/>
-      <OtherSkills/>
-      <MyProjectCard/>
+        <SeeInAction/>
+        <ProjectHeading/>
+        <MyProjectCard/>
+      {/* 
+      
        <Projects/> */}
         </Container>
     );

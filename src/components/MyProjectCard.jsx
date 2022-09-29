@@ -13,15 +13,15 @@ const MyProjectCard = ({
 }) => {
   return (
     <Container
-      height="600px"
-      maxW="1000px"
-      display="flex"
+      maxW="full"
+      mt='50px'
+      display={["block", "block", "block", "flex", "flex"]}
     >
       <Container
         transform="rotate(45deg)"
-        borderRadius="3.125rem"
-        height="400px"
-        w="400px"
+        borderRadius={['2em',"3em"]}
+        height={['240px',"320px"]}
+        w={['240px',"320px"]}
         margin="auto"
         zIndex={1}
         backgroundColor=" #2d2c2c"
@@ -30,8 +30,8 @@ const MyProjectCard = ({
         <Container
           transform="rotate(-45deg)"
           color="brand"
-          height="400px"
-          w="400px"
+          height={['240px',"320px"]}
+          w={['240px',"320px"]}
           marginLeft="-15px"
           py="90px"
         >
@@ -42,9 +42,9 @@ const MyProjectCard = ({
 
       <Container
         transform="rotate(45deg)"
-        borderRadius="3.125rem"
-        height="350px"
-        w="350px"
+        borderRadius={['2em',"3em"]}
+        height={['200px',"280px"]}
+        w={['200px',"280px"]}
         margin="auto"
         backgroundColor="#79d392"
         border="0.25rem solid #79d392"
@@ -52,8 +52,8 @@ const MyProjectCard = ({
         {" "}
         <Container
           transform="rotate(-45deg)"
-          height="350px"
-          w="300px"
+          height={['200px',"280px"]}
+          w={['150px',"230px"]}
           px="20px"
             marginLeft='25px'
 
@@ -71,9 +71,9 @@ const MyProjectCard = ({
 
       <Container
         transform="rotate(45deg)"
-        borderRadius="3.125rem"
-        height="300px"
-        w="300px"
+        borderRadius={['2em',"3em"]}
+        height={['150px',"250px"]}
+        w={['150px',"250px"]}
         margin="auto"
         backgroundColor=" #2d2c2c"
         border=" 0.25rem solid #79d392"
@@ -83,13 +83,13 @@ const MyProjectCard = ({
           transform="rotate(-45deg)"
           color="brand"
           marginLeft="-15px"
-          height="300px"
-          w="300px"
+          height={['150px',"250px"]}
+          w={['150px',"250px"]}
           p="0px"
-          paddingTop="25px"
+          paddingTop={['.1em',"2em"]}
         >
           {" "}
-          <Text fontWeight="semibold">TechStack Used:</Text>
+          <Text fontWeight="semibold" w={['10em','10em']} ml={['2.3em','3em']} fontSize={['10px','md']}>Tech Stack Used:</Text>
           <ProjectStack />
           <ProjectLinkButtons livelink={livelink} github={github} />
         </Container>
