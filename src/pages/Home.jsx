@@ -29,10 +29,7 @@ const Home = () => {
         <OtherSkills/>
         <SeeInAction/>
         <ProjectHeading/>
-        <MyProjectCard/>
-      {/* 
-      
-       <Projects/> */}
+        <Projects/>
         </Container>
     );
 };

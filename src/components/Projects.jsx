@@ -6,6 +6,7 @@ import Zee5 from "../assets/zee5png.png";
 import IndiaMart from "../assets/indiamart.png";
 import { SiChakraui,SiReact,SiRedux,SiJavascript,SiCss3 } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
+import MyProjectCard from "./MyProjectCard";
 
 
 const Projects = () => {
@@ -57,18 +58,10 @@ const Projects = () => {
 
   return (
     <Container id='Projects' maxW="90%"  margin='auto'padding='0px'  marginTop='50px'>
-      <Heading margin='20px'>My Projects</Heading>
-    <Container maxW="100%"  display='grid'
-      gridTemplateColumns={[
-        "repeat(1,1fr)",
-        "repeat(1,1fr)",
-        "repeat(2,1fr)",
-        "repeat(3,1fr)",
-        "repeat(3,1fr)",
-    ]}
+    <Container maxW="100%" 
       gap='20px' margin='auto' p='0px' marginTop='50px'>
       {projects.map((project) => {
-        return <ProjectCard key={project.id} {...project} />;
+        return <MyProjectCard key={project.id} {...project} />;
       })}
     </Container>
     </Container>

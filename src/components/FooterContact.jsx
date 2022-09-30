@@ -9,17 +9,17 @@ const FooterContact = () => {
     <Container
       transform="rotate(45deg)"
       borderRadius="2em"
-      height="1000px"
-      maxW="1000px"
+      height={['300px',"1000px"]}
+      maxW={['300px',"1000px"]}
       bg="brand "
-      marginBottom='-500px'
-      marginLeft='500px'
+      marginBottom={['-50px','-500px']}
+      marginLeft={['100px','500px']}
       p="0px"
     >
       <Container
         transform="rotate(-45deg)"
-        height="1000px"
-        maxW="1000px"
+        height={['500px',"1000px"]}
+        maxW={['500px',"1000px"]}
         py="1em"
       >
         <Text

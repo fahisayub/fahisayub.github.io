@@ -5,7 +5,7 @@ import ProjectLinkButtons from "./ProjectLinkButtons";
 import ProjectStack from "./ProjectStack";
 const MyProjectCard = ({
   projectTitle,
-  image,
+  images,
   description,
   github,
   livelink,
@@ -13,8 +13,8 @@ const MyProjectCard = ({
 }) => {
   return (
     <Container
-      maxW="full"
-      mt='50px'
+      maxW={["full",'70%']}
+      mt='80px'
       display={["block", "block", "block", "flex", "flex"]}
     >
       <Container
@@ -33,10 +33,10 @@ const MyProjectCard = ({
           height={['240px',"320px"]}
           w={['240px',"320px"]}
           marginLeft="-15px"
-          py="90px"
+          py={['50px',"70px"]}
         >
           {" "}
-          <Img src={image} boxSize="border-box" borderRadius="10px" />
+          <Img src={images} boxSize="border-box" borderRadius="10px" />
         </Container>
       </Container>
 
@@ -54,15 +54,15 @@ const MyProjectCard = ({
           transform="rotate(-45deg)"
           height={['200px',"280px"]}
           w={['150px',"230px"]}
-          px="20px"
+          px={["10px",'20px']}
             marginLeft='25px'
 
         >
           {" "}
-          <Heading fontWeight="semibold" size="md" margin="20px">
+          <Heading fontWeight="semibold" size={['sm',"md"]} margin="10px">
             {projectTitle}
           </Heading>
-          <Text margin="20px" h="100px">
+          <Text margin={['0px',"20px"]} fontSize={['xs','md']} h="100px">
             {description}
            
           </Text>
@@ -90,7 +90,7 @@ const MyProjectCard = ({
         >
           {" "}
           <Text fontWeight="semibold" w={['10em','10em']} ml={['2.3em','3em']} fontSize={['10px','md']}>Tech Stack Used:</Text>
-          <ProjectStack />
+          <ProjectStack techStack={techStack} />
           <ProjectLinkButtons livelink={livelink} github={github} />
         </Container>
       </Container>
