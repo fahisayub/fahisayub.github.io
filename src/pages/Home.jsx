@@ -15,6 +15,12 @@ import MyImageCard from '../components/MyImageCard';
 import ResumeButton from '../components/ResumeButton';
 import SeeInAction from '../components/SeeInAction';
 import ProjectHeading from '../components/ProjectHeading';
+import ContactsHeading from '../components/ContactsHeading';
+import SkillsHeading from '../components/SkillsHeading';
+import KnowMore from '../components/KnowMore';
+import GithubCalendar from '../components/GitHubCalendar';
+import Statistics from './Statistics';
+import StatsTitle from '../components/StatsTitle';
 const Home = () => {
    
     return (
@@ -23,13 +29,20 @@ const Home = () => {
       <HiIam/>
         <MyImageCard/>
         <ResumeButton/>
+        <KnowMore/>
         <SummaryAboutme/>
         <Whyme/>
+        <SkillsHeading/>
       <TechStacks/>
         <OtherSkills/>
         <SeeInAction/>
         <ProjectHeading/>
         <Projects/>
+        <StatsTitle/>
+        <Statistics/>
+        <GithubCalendar name="fahisayub"  />
+        <HowToConnect/>
+        <ContactsHeading/>
         </Container>
     );
 };

@@ -5,15 +5,15 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 const SocialButtons = () => {
   return (
     <Container
-    width='200px'
+    width={['100px','200px']}
       display="block"
-      marginTop="10px"
+      marginTop="0px"
     >
       <Button
         as="a"
-        margin="5px"    width='150px'
+        margin="5px"    
 
-        size={["sm", "sm", "md", "md", "md"]}
+        size={["xs", "sm", "md", "md", "md"]}
         href="https://github.com/fahisayub"
         bg="brand_secondary"
         target='_blank'
@@ -22,13 +22,13 @@ const SocialButtons = () => {
       >
         {" "}
         <SiGithub />
-        My GitHub
+        GitHub
       </Button>
       <Button
         as="a"
-        margin="5px"    width='150px'
+        margin="5px"    
 
-        size={["sm", "sm", "md", "md", "md"]}
+        size={["xs", "sm", "md", "md", "md"]}
         href="https://www.linkedin.com/in/muhammed-fahiz-p-a-62804515b/"
         bg="brand_secondary"
         target='_blank'
@@ -37,7 +37,7 @@ const SocialButtons = () => {
       >
         {" "}
         <SiLinkedin />
-        My LinkedIn
+        LinkedIn
       </Button>
     </Container>
   );

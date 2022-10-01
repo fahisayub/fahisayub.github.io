@@ -1,8 +1,9 @@
 
+
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import { Container, Text } from "@chakra-ui/react";
 import React from "react";
-const HowToConnect = () => {
+const KnowMore = () => {
     return (
         <Container
         transform="rotate(45deg)"
@@ -14,7 +15,7 @@ const HowToConnect = () => {
         bg="brand_secondary "
         p='0px'
         mr={['10px','50px','100px','200px','200px']}
-        mt='20px'
+        mt={['-60px','-100px']}
         
       >
         <Container
@@ -25,7 +26,7 @@ const HowToConnect = () => {
           
         >
           <Text fontSize={['.6em',"1.2em"]} color="brand" marginTop={['.1em','.1em']} textAlign='center' fontWeight="semibold">
-            How to connect with me?
+            Let me help you know more...
           </Text>
           <ArrowBackIcon
             color="brand"
@@ -40,4 +41,4 @@ const HowToConnect = () => {
 };
 
 
-export default HowToConnect;
+export default KnowMore;

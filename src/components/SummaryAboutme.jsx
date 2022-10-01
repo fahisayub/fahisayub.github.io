@@ -17,6 +17,7 @@ const SummaryAboutme = () => {
       p="0px"
       mt={['2em','0em','2em','0em','0em']}
       mr={['1.5em','5em','10em','20em','25em']}
+      _hover={{boxShadow:'5px 5px 20px #79d392'}}
     >
       <Container
         transform="rotate(-45deg)"

@@ -13,6 +13,7 @@ const SeeInAction = () => {
         borderColor="brand"
         bg="brand_secondary "
         p='0px'
+        mt='10px'
         mr={['10px','50px','100px','200px','200px']}
         
       >

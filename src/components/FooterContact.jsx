@@ -9,30 +9,31 @@ const FooterContact = () => {
     <Container
       transform="rotate(45deg)"
       borderRadius="2em"
-      height={['300px',"1000px"]}
-      maxW={['300px',"1000px"]}
+      height={['300px',"500px"]}
+      maxW={['300px',"500px"]}
       bg="brand "
-      marginBottom={['-50px','-500px']}
-      marginLeft={['100px','500px']}
+      mt='-50px'
+      marginBottom={['-50px','-100px']}
       p="0px"
+      _hover={{boxShadow:'5px 5px 20px #79d392'}}
     >
       <Container
         transform="rotate(-45deg)"
-        height={['500px',"1000px"]}
-        maxW={['500px',"1000px"]}
+        height={['300px',"500px"]}
+        maxW={['300px',"500px"]}
         py="1em"
       >
         <Text
-          fontSize="1.5em"
-          w="10em"
+          fontSize={['.8em',"1.5em"]}
+          w={['10em',"10em"]}
           margin="auto"
           textAlign="center"
           fontWeight="bold"
         >
           Feel free to connect with me:
         </Text>
-<Container  height="1000px"
-        maxW="500px"
+<Container  height={['300px','500px']}
+        maxW={['300px',"500px"]}
         display='flex'
         >
 
@@ -40,9 +41,9 @@ const FooterContact = () => {
      <SocialButtons/>
 
         </Box>   
-        <Divider h="100px" orientation='vertical' m="auto" my="10px" borderColor="brand_secondary" />
+        <Divider h={['60px',"100px"]} orientation='vertical' m="auto" my="10px" borderColor="brand_secondary" />
         <Box
-          fontSize="25px"
+          fontSize={['1em','1.8em']}
           display="block"
           margin="auto"
           textAlign="left"

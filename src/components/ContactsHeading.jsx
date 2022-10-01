@@ -1,10 +1,11 @@
-
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import { Container, Text } from "@chakra-ui/react";
 import React from "react";
-const HowToConnect = () => {
-    return (
-        <Container
+
+const ContactsHeading = () => {
+  return (
+      <Container
+      id='Contacts'
         transform="rotate(45deg)"
         borderRadius={["1em",'2em']}
         height={['100px',"200px"]}
@@ -13,31 +14,24 @@ const HowToConnect = () => {
         borderColor="brand"
         bg="brand_secondary "
         p='0px'
-        mr={['10px','50px','100px','200px','200px']}
-        mt='20px'
+        mt='-50px'
+        ml={['10px','50px','100px','200px','200px']}
         
       >
         <Container
           transform="rotate(-45deg)"
           height={['100px',"200px"]}
           width={['100px',"200px"]}
-          p={['1em',"2.5em"]}
+          p={['1em',"2em"]}
           
         >
-          <Text fontSize={['.6em',"1.2em"]} color="brand" marginTop={['.1em','.1em']} textAlign='center' fontWeight="semibold">
-            How to connect with me?
+          <Text fontSize={['md','3xl']} color="brand" marginTop={['1em','1.4em']} textAlign='center' fontWeight="bold">
+            Contacts
           </Text>
-          <ArrowBackIcon
-            color="brand"
-            fontSize={['2em',"4em"]}
-            transform="rotate(-45deg)"
-            marginTop=".3em"
-            marginRight='.5em'
-          />
+         
         </Container>
       </Container>
-    );
+  );
 };
 
-
-export default HowToConnect;
+export default ContactsHeading;

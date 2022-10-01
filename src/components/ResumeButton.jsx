@@ -11,15 +11,17 @@ const ResumeButton = () => {
         width={["100px","200px"]}
         bg="brand "
         p="0px"
-        mt={['0px','0px','0em','0em','0em']}
-        ml={['1em','5em','5em','10em','20em']}
+        mt={['0px','-10px']}
+        ml={['10px','50px','100px','200px','200px']}
+        _hover={{boxShadow:'5px 5px 20px #79d392'}}
+
       >
         <Container
           transform="rotate(-45deg)"
           height={["100px","200px"]}
         width={["100px","200px"]}
           py={['25px',"25px"]}
-          ml={['0px','-10px']}
+          ml={['0px','0px']}
         >
           <Text fontSize={['.6em',"1.2em"]}fontWeight='semibold' >
             Download my Resume here
@@ -29,7 +31,6 @@ const ResumeButton = () => {
             height={['2em','2em']}
             width={['6em','6em']}
             margin="auto"
-            colosrScheme='balck'
             as="a"
             target="_blank"
             href="/MuhammedFahiz_Resume.pdf"
@@ -37,7 +38,7 @@ const ResumeButton = () => {
             bg="brand_secondary"
             fontSize={['.5em','1.5em']}
             color='brand'
-            _hover={{bg:'balck' , color:'green.400'}}
+            _hover={{bg:'balck' , color:'green.600'}}
           ><DownloadIcon marginRight='5px'   />
               Resume
           </Button>

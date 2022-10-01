@@ -12,6 +12,7 @@ const AboutMe = () => {
       borderRadius="20px"
       margin="auto"
       marginTop="20px"
+      
     >
       <Heading margin="auto" size="lg">
         About Me

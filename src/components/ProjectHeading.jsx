@@ -5,6 +5,7 @@ import React from "react";
 const ProjectHeading = () => {
   return (
       <Container
+      id='Projects'
         transform="rotate(45deg)"
         borderRadius={["1em",'2em']}
         height={['100px',"200px"]}
@@ -13,6 +14,7 @@ const ProjectHeading = () => {
         borderColor="brand"
         bg="brand_secondary "
         p='0px'
+        mt='-50px'
         ml={['10px','50px','100px','200px','200px']}
         
       >

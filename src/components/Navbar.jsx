@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const buttonProps = getButtonProps();
   const disclosureProps = getDisclosureProps();
-  const links = ["About me", "Skills", "Projects", "Contacts"];
+  const links = ["About me", "Skills", "Projects",'Statistics', "Contacts"];
 
   return (
     <Container

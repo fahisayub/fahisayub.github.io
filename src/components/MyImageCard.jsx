@@ -12,10 +12,9 @@ const MyImageCard = () => {
     overflow='hidden'
     bg= '#5bb367 '
     padding='0px'
-    mt={['3em','3em','1em','1em','1em']}
-    mr={['1em','5em','5em','10em','20em']}
-    boxShadow='5px 5px 25px #79d392'
-    
+    mt={['3em','3em','0em','0em','0em']}
+    mr={['1em','5em','10em','15em','20em']}
+    _hover={{boxShadow:'5px 5px 20px #79d392'}}    
     >
         <Container transform= 'rotate(-45deg)'
          height= {['250px','380px','380px']}

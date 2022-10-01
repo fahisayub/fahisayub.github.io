@@ -10,6 +10,8 @@ const SkillTitleItem = ({mtitle,ltitle,rtitle}) => {
   border='4px'
   borderColor='brand'
    colSpan={2}
+   _hover={{boxShadow:'5px 5px 20px #79d392'}}
+
      > 
      <Container
          transform='rotate(-45deg)'
@@ -58,7 +60,7 @@ const SkillItem = ({children,dis,skill})=>{
 borderRadius={['.6em','.8em','1em']}
 overflow='hidden'
 bg={dis?'':'brand'}
-
+_hover={dis?'':{boxShadow:'5px 5px 20px #79d392'}}
 
  >
     {dis?'':<Container

@@ -12,7 +12,8 @@ const HiIam = () => {
       width={["200px","350px",'350px']}
       bg="brand "
       p="0px"
-      ml={['1em','2em','5em','15em','25em']}
+      ml={['1em','2em','5em','15em','20em']}
+      _hover={{boxShadow:'5px 5px 20px #79d392'}}
     >
       <Container
         transform="rotate(-45deg)"

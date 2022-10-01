@@ -28,10 +28,10 @@ const ProjectStack = ({techStack}) => {
                 h={['30px',"40px"]}
                 bg="white"
                 textAlign="center"
-                p={['5px',"5px"]}
+                p={['5px',"8px"]}
                 boxShadow="base"
               >
-                <Icon boxSize={['30px',"20px"]}>{img}</Icon>
+                <Icon  boxSize={['20px',"30px"]}>{img}</Icon>
               </Box>
             );
           })}
