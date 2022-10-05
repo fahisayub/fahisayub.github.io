@@ -1,10 +1,10 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
-import { Heading, Container } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import Ideakart from "../assets/ideakart.png";
 import Zee5 from "../assets/zee5png.png";
+import datesandnuts from "../assets/datesandnutsapp.png";
 import IndiaMart from "../assets/indiamart.png";
-import { SiChakraui,SiReact,SiRedux,SiJavascript,SiCss3 } from "react-icons/si";
+import { SiChakraui,SiReact,SiRedux,SiJavascript,SiCss3, SiFirebase } from "react-icons/si";
 import { AiFillHtml5 } from "react-icons/ai";
 import MyProjectCard from "./MyProjectCard";
 
@@ -13,6 +13,22 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      livelink: "datesandnutsapp.netlify.app/",
+      github: "https://github.com/fahisayub/dates-and-nuts-webapp",
+      techStack: [  {id:1,skill:'React',img:<SiReact size='20px' color='skyblue' />},
+      {id:2,skill:'Redux',img:<SiRedux size='20px' color='darkblue' />},
+      {id:3,skill:'Chakra',img:<SiChakraui size='20px' color='rgb(78,201,196)' />},
+      {id:4,skill:'Firebase',img:<SiFirebase size='20px' color='orange' />},
+    ],
+      description:
+        "Dates&Nuts is a full-fledged E-commerce website which sells dates,nuts,spices and related products.",
+      features: [],
+      images: datesandnuts,
+      gif: "",
+      projectTitle: "Dates&Nuts Website",
+    },
+    {
+      id: 2,
       livelink: "https://jocular-pony-971066.netlify.app/",
       github: "https://github.com/fahisayub/Zee_clone",
       techStack: [ {id:1,skill:'HTML5',img:<AiFillHtml5 size='20px' color='rgb(233,89,35)' />},
@@ -26,7 +42,7 @@ const Projects = () => {
       projectTitle: "ZEE5 Clone",
     },
     {
-      id: 2,
+      id: 3,
       livelink: "https://ideakart-clone-rct101.netlify.app/",
       github: "https://github.com/fahisayub/ideakart-clone",
       techStack: [{id:2,skill:'CSS3',img:<SiCss3 size='20px' color='blue' />},
@@ -41,7 +57,7 @@ const Projects = () => {
       projectTitle: "IDEAKART Clone",
     },
     {
-      id: 3,
+      id: 4,
       livelink: "https://chimerical-empanada-f4a3f8.netlify.app/",
       github: "https://github.com/fahisayub/BlueHeavenClone",
       techStack: [ {id:1,skill:'HTML5',img:<AiFillHtml5 size='20px' color='rgb(233,89,35)' />},

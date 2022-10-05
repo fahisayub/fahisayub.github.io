@@ -32,9 +32,8 @@ const SummaryAboutme = () => {
         <Divider w={['100px','200px']} m='auto' my={['5px','10px']} borderColor="brand_secondary" />
 
         <Text fontSize={['xs',"md"]} margin="auto">
-        An Aspiring Web Developer,always curious about new
-        problems and bringing the best solution with an interdisciplinary
-        collaboration
+        An inspired team palyer,always curious about new
+        problems and learning new things in order to deliver out of the box solution with complete ownership.
         </Text>
         <Box
         fontSize={['md',"25px"]}

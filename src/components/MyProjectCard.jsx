@@ -1,6 +1,5 @@
 import { Container, Divider, Heading, Img, Text } from "@chakra-ui/react";
 import React from "react";
-import ideakart from "../assets/ideakart.png";
 import ProjectLinkButtons from "./ProjectLinkButtons";
 import ProjectStack from "./ProjectStack";
 const MyProjectCard = ({
@@ -34,8 +33,13 @@ const MyProjectCard = ({
           height={["240px", "320px"]}
           w={["240px", "320px"]}
           marginLeft="-15px"
-          py={["50px", "70px"]}
+          py={["30px", "50px"]}
         >
+          <Heading fontWeight="bold" size={["sm", "md"]}>
+            {projectTitle}
+          </Heading>
+          <Divider borderColor="brand" my='10px' />
+
           {" "}
           <Img
             src={images}
@@ -66,17 +70,16 @@ const MyProjectCard = ({
         <Container
           transform="rotate(-45deg)"
           height={["200px", "280px"]}
-          w={["150px", "230px"]}
+          w={["200px", "280px"]}
           px={["10px", "20px"]}
-          marginLeft="25px"
           
         >
           {" "}
-          <Heading fontWeight="semibold" size={["sm", "md"]} margin="5px">
-            {projectTitle}
+          <Heading fontWeight="semibold" size={["xs", "sm"]} margin="5px">
+            Features
           </Heading>
-          <Divider borderColor="brand_secondary" />
-          <Text margin={["0px", "20px"]} fontSize={["xs", "md"]} h="100px">
+          <Divider borderColor="brand_secondary" w='100px' m='auto' />
+          <Text margin={["10px", "20px"]} fontSize={["xs", "md"]} h="100px">
             {description}
           </Text>
         </Container>

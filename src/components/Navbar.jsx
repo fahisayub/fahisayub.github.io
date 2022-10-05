@@ -64,14 +64,33 @@ const Navbar = () => {
               smooth={true}
               offset={-80}
               duration={400}
+              p='5px'm='auto'
               cursor="pointer"
+              w='100px'
+              _hover={{bg:'lightGreen', borderRadius:'10px',}}
+
             >
               {navlink}
             </Link>
           );
         })}
+        
       </Box>
-     
+      <Button
+      display={["none", "none", "flex", "flex", "flex"]}
+            borderRadius=".8rem"
+            size={['sm','md']}
+            margin="auto"
+            as="a"
+            target="_blank"
+            href="/MuhammedFahiz_Resume.pdf"
+            download={true}
+            bg="brand_secondary"
+            color='brand'
+            _hover={{bg:'balck' , color:'green.600'}}
+          ><DownloadIcon marginRight='5px'   />
+              Resume
+          </Button>
       <Box >
         
         <IconButton

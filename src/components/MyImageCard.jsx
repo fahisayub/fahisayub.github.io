@@ -1,4 +1,4 @@
-import {  Container, Text,Button, Img } from '@chakra-ui/react';
+import {  Container } from '@chakra-ui/react';
 import React from 'react';
 import Mfahiz from "../Mfahiz_photo.jpg";
 

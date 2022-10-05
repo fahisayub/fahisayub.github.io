@@ -23,10 +23,9 @@ const AboutMe = () => {
         w={["90%", "90%", "70%", "60%", "60%"]}
         textAlign="center"
       >
-        An Aspiring Web Developer, Proficient in translating design into
-        high-quality code using the best practice, always curious about new
-        problems and bringing the best solution with an interdisciplinary
-        collaboration
+        An inspired team palyer,previously founder at spisook,always curious about new
+        problems and learning new things in order to deliver out of the box solution for a 
+        better return on investment with complete ownership
       </Text>
       <Box
         fontSize="25px"
