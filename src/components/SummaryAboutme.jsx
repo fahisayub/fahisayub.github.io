@@ -8,7 +8,7 @@ import { MdPhone, MdEmail } from "react-icons/md";
 const SummaryAboutme = () => {
   return (
     <Container
-    id='About me'
+    id='About'
       transform="rotate(45deg)"
       borderRadius="2em"
       height={['240px',"350px"]}

@@ -1,7 +1,7 @@
 import { Grid,  } from '@chakra-ui/react';
 import React from 'react';
 
-import { FcCommandLine } from "react-icons/fc";
+import { FcCommandLine, FcIdea } from "react-icons/fc";
 import {
   SiGithub,
 //   SiAnsys,
@@ -22,6 +22,8 @@ import { ProblemSolvingIcon } from "../assets/ProblemSolvingIcon";
 import { TeamworkIcon } from "../assets/TeamworkIcon";
 import { AdaptabilityIcon } from "../assets/AdaptabilityIcon";
 import { SkillItem, SkillTitleItem } from './SkillItemCard';
+import { FaStepForward, FaTree } from 'react-icons/fa';
+import { MdGroupWork } from 'react-icons/md';
 
 
 const OtherSkills = () => {
@@ -60,8 +62,8 @@ const OtherSkills = () => {
   <SkillItem  skill='Eagle' >        <EagleIcon/>                           20</SkillItem>
   <SkillItem  skill='Arduino' >       <SiArduino size="18px" color="black" />                            21</SkillItem>
   <SkillItem  dis='none'>                          22</SkillItem>
-  <SkillItem  skill='Growth' >                                   23</SkillItem>
-  <SkillItem  skill='Innovative' >                                   24</SkillItem>
+  <SkillItem  skill='Growth' >      <FaTree size="18px" color='black'/>                             23</SkillItem>
+  <SkillItem  skill='' >                                  24</SkillItem>
   <SkillItem  skill='' >                                   25</SkillItem>
   <SkillItem  dis='none' >                         26</SkillItem>
   <SkillItem  dis='none' >                         27</SkillItem>

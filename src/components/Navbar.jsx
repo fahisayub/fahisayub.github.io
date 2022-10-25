@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const buttonProps = getButtonProps();
   const disclosureProps = getDisclosureProps();
-  const links = ["About me", "Skills", "Projects",'Statistics', "Contacts"];
+  const links = ["Home","About", "Skills", "Projects",'Statistics', "Contacts"];
 
   return (
     <Container
@@ -38,7 +38,7 @@ const Navbar = () => {
     >
       <Box
         as={ScrollLink}
-        to="Intro"
+        to="Home"
         spy={true}
         smooth={true}
         offset={-80}

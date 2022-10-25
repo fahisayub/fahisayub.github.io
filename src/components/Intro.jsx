@@ -15,7 +15,7 @@ import OtherSkills from "./OtherSkills";
 const Intro = () => {
   return (
     <Container
-      id='Intro'
+      id='Home'
       margin="auto"
       maxW="100%"
       mt='20px'

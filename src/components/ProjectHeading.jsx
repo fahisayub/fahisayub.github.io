@@ -26,7 +26,7 @@ const ProjectHeading = () => {
           
         >
           <Text fontSize={['lg','3xl']} color="brand" marginTop={['1em','1em']} textAlign='center' fontWeight="bold">
-            Project
+            Projects
           </Text>
          
         </Container>

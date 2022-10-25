@@ -5,7 +5,7 @@ import Hi from "../hi.png";
 const HiIam = () => {
   return (
     <Container
-    id='Intro'
+    id='Home'
       transform="rotate(45deg)"
       borderRadius="2em"
       height={["200px","350px",'350px']}

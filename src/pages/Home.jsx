@@ -17,6 +17,7 @@ import KnowMore from '../components/KnowMore';
 import GithubCalendar from '../components/GitHubCalendar';
 import Statistics from './Statistics';
 import StatsTitle from '../components/StatsTitle';
+import GitHubStats from '../components/GitHubStats';
 const Home = () => {
    
     return (
@@ -37,6 +38,7 @@ const Home = () => {
         <StatsTitle/>
         <Statistics/>
         <GithubCalendar name="fahisayub"  />
+        <GitHubStats/>
         <HowToConnect/>
         <ContactsHeading/>
         </Container>

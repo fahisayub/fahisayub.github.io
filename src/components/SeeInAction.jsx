@@ -25,7 +25,7 @@ const SeeInAction = () => {
           
         >
           <Text fontSize={['.6em',"1.2em"]} color="brand" marginTop={['1em','1em']} textAlign='center' fontWeight="semibold">
-            Let see me in action!
+            Let's see me in action!
           </Text>
           <ArrowBackIcon
             color="brand"

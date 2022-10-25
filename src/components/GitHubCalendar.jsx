@@ -3,7 +3,8 @@ import GitHubCalendar from 'github-calendar';
 import PropTypes from 'prop-types';
 
 import '../styles.css';
-import { Container } from '@chakra-ui/react';
+import { Container, Heading } from '@chakra-ui/react';
+import ReactTooltip from 'react-tooltip';
 
 export default class GithubCalendar extends Component {
   static propTypes = {
@@ -15,18 +16,23 @@ export default class GithubCalendar extends Component {
   }
   render() {
     return (
-      <Container
-      bg='green.100'
-      color='brand_secondary'
-      borderRadius='20px'
-      my='60px'
+      <Container 
       maxW={['full','80%']} 
-        className={
-          'calendar' + (this.props.className ? ' ' + this.props.className : '')
-        }
-        {...this.props}
-        ref="container"
+      bg='green.100'
+      my='60px'
+      color='brand_secondary'
+borderRadius='20px'
+      >
+<Heading>My GitHub Calendar</Heading>
+      <Container
+      maxW='full' 
+      className={
+        'calendar' + (this.props.className ? ' ' + this.props.className : '')
+      }
+      {...this.props}
+      ref="container"
       />
+      </Container>
     );
   }
 }

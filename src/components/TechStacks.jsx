@@ -1,19 +1,19 @@
 import { Grid,  } from '@chakra-ui/react';
 import React from 'react';
 import { AiFillHtml5 } from "react-icons/ai";
-// import { FaNodeJs } from "react-icons/fa";
+ import { FaNodeJs } from "react-icons/fa";
 
 import {
  
   SiChakraui,
   SiFirebase,
   SiReact,SiHeroku,
-//   SiExpress,
+  SiExpress,
   SiRedux,
   SiFlutter,
   SiJavascript,
   SiCss3,
-//   SiMongodb,
+  SiMongodb,
  
 } from "react-icons/si";
 
@@ -42,13 +42,13 @@ const TechStacks = () => {
   <SkillItem  dis='none'>                           4</SkillItem>
   <SkillItem  dis='none' >                          5</SkillItem>
   <SkillItem  skill='DSA' >   <DsaIcon/>                                 6</SkillItem>
-  <SkillItem  skill='' >                                    7</SkillItem>
-  <SkillItem  skill='' >                                    8</SkillItem>
+  <SkillItem  skill='Node' > <FaNodeJs size="18px" color='black'/>                                    7</SkillItem>
+  <SkillItem  skill='Express' >  <SiExpress size="18px" color='black' />                                  8</SkillItem>
   <SkillItem   dis='none'>                          9</SkillItem>
   <SkillItem  skill='HTML' > <AiFillHtml5 size="18px" color="black"/>                                10</SkillItem>
   <SkillItem  skill='CSS' >   <SiCss3 size="18px" color='black'/>                               11</SkillItem>
   <SkillItem  dis='none'>                          12</SkillItem>
-  <SkillItem  skill='' >                                   13</SkillItem>
+  <SkillItem  skill='MongoDB' > <SiMongodb size="18px" color='black'/>                                  13</SkillItem>
   <SkillItem  skill='' >                                   14</SkillItem>
   <SkillItem  skill='' >                                   15</SkillItem>
   <SkillItem  skill='JavaScript' >    <SiJavascript size="18px" color="black" />                               16</SkillItem>
