@@ -13,7 +13,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      livelink: "datesandnutsapp.netlify.app/",
+      livelink: "https://datesandnutsapp.netlify.app/",
       github: "https://github.com/fahisayub/dates-and-nuts-webapp",
       techStack: [  {id:1,skill:'React',img:<SiReact size='20px' color='skyblue' />},
       {id:2,skill:'Redux',img:<SiRedux size='20px' color='darkblue' />},

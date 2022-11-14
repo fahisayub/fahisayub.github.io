@@ -83,7 +83,7 @@ const Navbar = () => {
             margin="auto"
             as="a"
             target="_blank"
-            href="/MuhammedFahiz_Resume.pdf"
+            href="/Muhammed_Fahiz_Resume.pdf"
             download={true}
             bg="brand_secondary"
             color='brand'

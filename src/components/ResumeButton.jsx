@@ -33,7 +33,7 @@ const ResumeButton = () => {
             margin="auto"
             as="a"
             target="_blank"
-            href="/MuhammedFahiz_Resume.pdf"
+            href="/Muhammed_Fahiz_Resume.pdf"
             download={true}
             bg="brand_secondary"
             fontSize={['.5em','1.5em']}
