@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bbf68139.css",
-    "main.js": "/static/js/main.ba4ab316.js",
+    "main.js": "/static/js/main.302dc77e.js",
     "static/js/787.46db9078.chunk.js": "/static/js/787.46db9078.chunk.js",
     "static/media/zee5png.png": "/static/media/zee5png.a15166210ec17a39fcea.png",
     "static/media/Mfahiz_photo.jpg": "/static/media/Mfahiz_photo.36c9463daac955d2332c.jpg",
@@ -11,11 +11,11 @@
     "static/media/indiamart.png": "/static/media/indiamart.07456da5bf3e6ce22a52.png",
     "index.html": "/index.html",
     "main.bbf68139.css.map": "/static/css/main.bbf68139.css.map",
-    "main.ba4ab316.js.map": "/static/js/main.ba4ab316.js.map",
+    "main.302dc77e.js.map": "/static/js/main.302dc77e.js.map",
     "787.46db9078.chunk.js.map": "/static/js/787.46db9078.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bbf68139.css",
-    "static/js/main.ba4ab316.js"
+    "static/js/main.302dc77e.js"
   ]
 }
