@@ -1,8 +1,16 @@
 import { DownloadIcon } from "@chakra-ui/icons";
-import { Container, Text, Button } from "@chakra-ui/react";
+import { Container, Text, Button, Link } from "@chakra-ui/react";
 import React from "react";
 
 const ResumeButton = () => {
+
+  const onClickhandler = () => {
+    return window.open(
+      "https://drive.google.com/file/d/1mp9pHHSYGICZnQi8MncxAKVCE90DR6ZR/view?usp=share_link",
+      "_blank"
+    );
+  };
+
   return (
       <Container
         transform="rotate(45deg)"
@@ -31,15 +39,17 @@ const ResumeButton = () => {
             height={['2em','2em']}
             width={['6em','6em']}
             margin="auto"
-            as="a"
+            as={Link}
             target="_blank"
             href="/Muhammed_Fahiz_Resume.pdf"
-            download={true}
+          download={true}
+          onClick={onClickhandler}
             bg="brand_secondary"
             fontSize={['.5em','1.5em']}
             color='brand'
             _hover={{bg:'balck' , color:'green.600'}}
-          ><DownloadIcon marginRight='5px'   />
+          >
+            <DownloadIcon marginRight='5px'   />
               Resume
           </Button>
         </Container>

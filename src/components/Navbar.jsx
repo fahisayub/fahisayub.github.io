@@ -19,22 +19,34 @@ const Navbar = () => {
 
   const buttonProps = getButtonProps();
   const disclosureProps = getDisclosureProps();
-  const links = ["Home","About", "Skills", "Projects",'Statistics', "Contacts"];
-
+  const links = [
+    "Home",
+    "About",
+    "Skills",
+    "Projects",
+    "Statistics",
+    "Contacts",
+  ];
+  const onClickhandler = () => {
+    return window.open(
+      "https://drive.google.com/file/d/1mp9pHHSYGICZnQi8MncxAKVCE90DR6ZR/view?usp=share_link",
+      "_blank"
+    );
+  };
   return (
     <Container
       h="80px"
-      marginBottom='50px'
-      pos='fixed'
+      marginBottom="50px"
+      pos="fixed"
       zIndex="2"
       padding="20px"
       maxW="100%"
       display="flex"
       justifyContent="space-between"
       bg="brand"
-      borderRadius='20px'
+      borderRadius="20px"
       color="black"
-      shadow='base'
+      shadow="base"
     >
       <Box
         as={ScrollLink}
@@ -48,7 +60,7 @@ const Navbar = () => {
           MFahiz
         </Heading>
       </Box>
-      <Spacer/>
+      <Spacer />
       <Box
         display={["none", "none", "flex", "flex", "flex"]}
         w="50%"
@@ -64,46 +76,48 @@ const Navbar = () => {
               smooth={true}
               offset={-80}
               duration={400}
-              p='5px'm='auto'
+              p="5px"
+              m="auto"
               cursor="pointer"
-              w='100px'
-              _hover={{bg:'lightGreen', borderRadius:'10px',}}
-
+              w="100px"
+              _hover={{ bg: "lightGreen", borderRadius: "10px" }}
             >
               {navlink}
             </Link>
           );
         })}
-        
       </Box>
-      <Button
-      display={["none", "none", "flex", "flex", "flex"]}
-            borderRadius=".8rem"
-            size={['sm','md']}
-            margin="auto"
-            as="a"
-            target="_blank"
-            href="/Muhammed_Fahiz_Resume.pdf"
-            download={true}
-            bg="brand_secondary"
-            color='brand'
-            _hover={{bg:'balck' , color:'green.600'}}
-          ><DownloadIcon marginRight='5px'   />
-              Resume
-          </Button>
-      <Box >
-        
+      <Link>
+        <Button
+          display={["none", "none", "flex", "flex", "flex"]}
+          borderRadius=".8rem"
+          size={["sm", "md"]}
+          margin="auto"
+          as={Link}
+          target="_blank"
+          bg="brand_secondary"
+          color="brand"
+          _hover={{ bg: "balck", color: "green.600" }}
+          href="/Muhammed_Fahiz_Resume.pdf"
+          download={true}
+          onClick={onClickhandler}
+        >
+          <DownloadIcon marginRight="5px" />
+          Resume
+        </Button>
+      </Link>
+      <Box>
         <IconButton
-        float='right'
+          float="right"
           variant="outline"
-          colorScheme='black'
+          colorScheme="black"
           {...buttonProps}
           display={["flex", "flex", "none", "none", "none"]}
         >
           <HamburgerIcon />
         </IconButton>
         <VStack
-        marginTop='40px'
+          marginTop="40px"
           {...disclosureProps}
           bg="brand_secondary"
           padding="5px"
@@ -116,8 +130,8 @@ const Navbar = () => {
                 as={ScrollLink}
                 key={i}
                 {...buttonProps}
-                width='100%'
-                color='brand'
+                width="100%"
+                color="brand"
                 borderRadius="5px"
                 to={navlink}
                 spy={true}
@@ -127,24 +141,25 @@ const Navbar = () => {
                 cursor="pointer"
               >
                 {navlink}
-                <Divider/>
+                <Divider />
               </Link>
             );
           })}
-           <Button
-        margin='auto'
-        as="a"
-        target='_blank'
-        variant='outline'
-        color='brand'
-        border='1px'
-        borderRadius='10px'
-        href='/MuhammedFahiz_Resume.pdf'
-        
-          download={true}
-        >
-          <DownloadIcon marginRight='5px' />Resume
-        </Button>
+          <Button
+            margin="auto"
+            as={Link}
+            target="_blank"
+            variant="outline"
+            color="brand"
+            border="1px"
+            borderRadius="10px"
+            href="/Muhammed_Fahiz_Resume.pdf"
+            download={true}
+            onClick={onClickhandler}
+          >
+            <DownloadIcon marginRight="5px" />
+            Resume
+          </Button>
         </VStack>
       </Box>
     </Container>
