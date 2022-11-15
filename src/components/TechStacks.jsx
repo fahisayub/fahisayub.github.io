@@ -1,7 +1,7 @@
 import { Grid,  } from '@chakra-ui/react';
 import React from 'react';
 import { AiFillHtml5 } from "react-icons/ai";
- import { FaNodeJs } from "react-icons/fa";
+ import { FaNodeJs, } from "react-icons/fa";
 
 import {
  
@@ -18,6 +18,7 @@ import {
 } from "react-icons/si";
 
 import { DsaIcon } from "../assets/DsaIcon";
+import { MongooseIcon } from '../assets/MongooseIcon';
 
 import { SkillItem, SkillTitleItem } from './SkillItemCard';
 const TechStacks = () => {
@@ -49,7 +50,7 @@ const TechStacks = () => {
   <SkillItem  skill='CSS' >   <SiCss3 size="18px" color='black'/>                               11</SkillItem>
   <SkillItem  dis='none'>                          12</SkillItem>
   <SkillItem  skill='MongoDB' > <SiMongodb size="18px" color='black'/>                                  13</SkillItem>
-  <SkillItem  skill='' >                                   14</SkillItem>
+  <SkillItem  skill='mongoose' >      <MongooseIcon/>                           14</SkillItem>
   <SkillItem  skill='' >                                   15</SkillItem>
   <SkillItem  skill='JavaScript' >    <SiJavascript size="18px" color="black" />                               16</SkillItem>
   <SkillItem  skill='React' >     <SiReact size="18px" color="black" />                                17</SkillItem>
