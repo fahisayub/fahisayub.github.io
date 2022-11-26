@@ -56,7 +56,7 @@ const Navbar = () => {
         offset={-80}
         duration={400}
       >
-        <Heading marginTop={0} fontFamily="cursive" size="lg">
+        <Heading marginTop={0} fontFamily="cursive" size="lg" cursor="pointer" >
           MFahiz
         </Heading>
       </Box>

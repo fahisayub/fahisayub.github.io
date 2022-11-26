@@ -1,6 +1,6 @@
-import { Container, Grid } from "@chakra-ui/react";
+import {  Grid } from "@chakra-ui/react";
 import React from "react";
-import StatsCard from "../components/StatsCard";
+import StatsCard from "./StatsCard";
 
 const Statistics = () => {
   return (
@@ -19,7 +19,7 @@ const Statistics = () => {
       />
       <StatsCard
         statcolor="green.700"
-        stat="510+"
+        stat="790+"
         description="GitHub Commits"
       />
       <StatsCard

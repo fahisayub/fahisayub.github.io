@@ -1,5 +1,4 @@
 
-import { ArrowBackIcon } from "@chakra-ui/icons";
 import { Container, Text } from "@chakra-ui/react";
 import React from "react";
 

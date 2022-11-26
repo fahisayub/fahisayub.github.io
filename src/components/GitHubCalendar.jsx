@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import '../styles.css';
 import { Container, Heading } from '@chakra-ui/react';
-import ReactTooltip from 'react-tooltip';
 
 export default class GithubCalendar extends Component {
   static propTypes = {

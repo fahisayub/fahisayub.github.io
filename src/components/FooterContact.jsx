@@ -1,4 +1,4 @@
-import { Container, Divider, Box, Icon, Text, Flex, Link } from "@chakra-ui/react";
+import { Container, Divider, Box, Icon, Text, Link } from "@chakra-ui/react";
 import React from "react";
 import { IoLocation } from "react-icons/io5";
 import { MdPhone, MdEmail } from "react-icons/md";
@@ -21,18 +21,18 @@ const FooterContact = () => {
         transform="rotate(-45deg)"
         height={['300px',"500px"]}
         maxW={['300px',"500px"]}
-        py="1em"
+        py="1em" 
       >
         <Text
           fontSize={['.8em',"1.5em"]}
           w={['10em',"10em"]}
           margin="auto"
           textAlign="center"
-          fontWeight="bold"
+          fontWeight="bold"mt='50px'
         >
           Feel free to connect with me:
         </Text>
-<Container  height={['300px','500px']}
+<Container  height={['300px','500px']} 
         maxW={['300px',"500px"]}
         display='flex'
         >
@@ -66,7 +66,7 @@ const FooterContact = () => {
           </Link>
 <br />
           <Link fontSize=".7em" href="tel:+918606298790"
-            onClick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Call', eventLabel: 'Mobile Button'});">
+            >
             <Icon fontSize="1.2em">
               <MdPhone />
             </Icon>{" "}

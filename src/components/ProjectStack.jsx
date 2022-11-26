@@ -1,7 +1,5 @@
-import { DeleteIcon } from '@chakra-ui/icons';
-import { Box, Icon, Text } from '@chakra-ui/react';
+import { Box, Icon } from '@chakra-ui/react';
 import React from 'react';
-import { SiHtml5 } from 'react-icons/si';
 
 const ProjectStack = ({techStack}) => {
     return (

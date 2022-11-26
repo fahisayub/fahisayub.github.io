@@ -1,4 +1,4 @@
-import { Center, Container, Image, Stack } from '@chakra-ui/react';
+import { Center, Container, Image } from '@chakra-ui/react';
 import React from 'react';
 
 const GitHubStats = () => {

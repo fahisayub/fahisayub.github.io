@@ -76,7 +76,7 @@ const MyProjectCard = ({
         >
           {" "}
           <Heading fontWeight="semibold" size={["xs", "sm"]} margin="5px">
-            Features
+            Summary
           </Heading>
           <Divider borderColor="brand_secondary" w='100px' m='auto' />
           <Text margin={["10px", "20px"]} fontSize={["xs", "md"]} h="100px">

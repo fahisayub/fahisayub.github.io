@@ -1,7 +1,7 @@
 import { Grid,  } from '@chakra-ui/react';
 import React from 'react';
 
-import { FcCommandLine, FcIdea } from "react-icons/fc";
+import { FcCommandLine } from "react-icons/fc";
 import {
   SiGithub,
 //   SiAnsys,
@@ -22,8 +22,7 @@ import { ProblemSolvingIcon } from "../assets/ProblemSolvingIcon";
 import { TeamworkIcon } from "../assets/TeamworkIcon";
 import { AdaptabilityIcon } from "../assets/AdaptabilityIcon";
 import { SkillItem, SkillTitleItem } from './SkillItemCard';
-import { FaStepForward, FaTree } from 'react-icons/fa';
-import { MdGroupWork } from 'react-icons/md';
+import { FaTree } from 'react-icons/fa';
 
 
 const OtherSkills = () => {
